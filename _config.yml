@@ -1,0 +1,18 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+title: "Ad Whittingham" # the name of your site, e.g. ACME Corp.
+
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: 'default'
+  - scope:
+      path: '_posts'
+    values:
+      layout: 'post'
+
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:title:output_ext

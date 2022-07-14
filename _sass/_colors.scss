@@ -1,0 +1,20 @@
+:root {
+  --background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(3,3,66,1) 20%);
+  --back: #00103F;
+  --text: #FFFFFF;
+  --headings: #00FF60;
+  --selection: #2050AF;
+  --link: #DDDDFF;
+  --link-hover: #AAAAFF;
+}
+
+
+[data-theme="light"] {
+  --background: #FFFFAF;
+  --back: #FFFFAF;
+  --text: #00103F;
+  --headings: #00FF60;
+  --selection: #2050AF;
+  --link: #000033;
+  --link-hover: #000044;
+}

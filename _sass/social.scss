@@ -1,0 +1,33 @@
+.social {
+  font-size: 1.5rem;
+
+  [class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 100%;
+  }
+
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 2em;
+    margin: auto;
+    vertical-align: center;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0.25rem;
+    color: var(--back);
+    background: var(--link);
+    transition: all ease-in-out 0.2s;
+
+    &:hover{
+      background: var(--text);
+    }
+
+    &:not(:last-child) {
+      margin-right: 0.5em;
+    }
+  }
+}

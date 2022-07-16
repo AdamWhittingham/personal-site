@@ -1,0 +1,11 @@
+table {
+  margin-top: 1em;
+  &.definitions td {
+    vertical-align: top;
+    padding-bottom: 1rem;
+    &:first-child{
+      padding-right: 1em;
+      text-align: right;
+    }
+  }
+}

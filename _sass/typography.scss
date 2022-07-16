@@ -65,3 +65,43 @@ li::marker { color: var(--headings)}
 ::-moz-selection {
   background: var(--selection)
 }
+
+em {
+  color: var(--emphasis);
+  font-style: normal;
+  font-weight: bold;
+}
+
+dl{
+  dt {
+    color: var(--emphasis);
+    font-style: normal;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  dd {
+    display: inline-block;
+  }
+}
+
+blockquote {
+  padding-left: 1em;
+  background: var(--blockquote);
+  margin-bottom: 1em;
+  p {
+    line-height: 3em;
+  }
+}
+
+table {
+  margin-top: 1em;
+  &.definitions td {
+    vertical-align: top;
+    padding-bottom: 1rem;
+    &:first-child{
+      padding-right: 1em;
+      text-align: right;
+    }
+  }
+}

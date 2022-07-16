@@ -1,4 +1,4 @@
-:root {
+body {
   --background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(3,3,66,1) 20%);
   --back: #00103F;
   --text: #FFFFFF;
@@ -6,15 +6,18 @@
   --selection: #2050AF;
   --link: #DDDDFF;
   --link-hover: #AAAAFF;
+  --emphasis: #FFCB00;
+  --blockquote: rgba(255, 255, 255, 0.2);
 }
 
-
-[data-theme="light"] {
-  --background: #FFFFAF;
-  --back: #FFFFAF;
+body.light {
+  --background: linear-gradient(90deg, rgba(200,194,192,1) 0%, rgba(204,196,196,1) 20%);
+  --back: rgb(200,194,192);
   --text: #00103F;
-  --headings: #00FF60;
+  --headings: #202020;
   --selection: #2050AF;
-  --link: #000033;
+  --link: #000044;
   --link-hover: #000044;
+  --emphasis: #0022DB;
+  --blockquote: rgba(0, 0, 0, 0.05);
 }

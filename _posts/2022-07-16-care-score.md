@@ -6,7 +6,7 @@ It is hard to be respectful, concise and also convey how strongly held an opinio
 # A simple answer
 There's a simple system that has really helped a few teams with these scenarios:
 
-**Assign how much you care about an opinion or comment out of ten.**
+<em>Assign how much you care about an opinion or comment out of ten.</em>
 
 This gives an instant reflection of how confident you are, or how important you think a comment is.
 
@@ -25,22 +25,39 @@ This has also worked well when discussing solutions.
 Alice and Bob disagree on the best design, and neither has managed to convince the other after a discussion. Alice is 7/10 confident while Bob is only 4/10, so they agree to go with Alice's choice.
 
 ## So what does the scale actually mean?
-The numbers themselves don't _mean_ something concrete - there is not a formal definition. The goal is to make people consider the strength of their convictions; similar to tools like Planning Poker.
+The numbers themselves don't <i>mean</i> something concrete - there is not a formal definition. The goal is to make people consider the strength of their convictions; similar to tools like Planning Poker.
 
 However it can be useful to have a rough guideline to foster a common understanding so here's an outline of how I think of it:
 
-1/10 - very optional feedback (almost always about stylistic choice around formatting)
+<table class="definitions">
+  <tr>
+    <td><em>1/10</em></td>
+    <td>Very optional feedback (almost always about stylistic choice around formatting)</td>
+  </tr>
 
-3/10 - doesn't matter in the grand scheme of things but made me frown, people will probably notice or be distracted by it.  I use this as the threshold for still approving a PR without wanting more of a discussion.
+  <tr>
+    <td><em>3/10</em></td>
+    <td>Far from critical but made me frown; others will probably notice or be distracted by it. I use this as the threshold for still approving a PR without wanting more of a discussion.</td>
+  </tr>
 
-5/10 - this issue feels important and needs reconsidering/discussing
+  <tr>
+    <td><em>5/10</em></td>
+    <td>This issue feels important and needs reconsidering/discussing</td>
+  </tr>
 
-7/10 - this is important and I think I may have a better idea here
+  <tr>
+    <td><em>7/10</em></td>
+    <td>This is important and I think I may have a better idea here</td>
+  </tr>
 
-10/10 - this will literally destroy the company/team/customers/planet
+  <tr>
+    <td><em>10/10</em></td>
+    <td>This will literally destroy the company/team/customers/planet</td>
+  </tr>
+</table>
 
-## What if someone just always picks a high number to win debates?
-This system won't save you from a colleague who feels like they need to "win" discussions. 
+## What if someone always picks a high number?
+This system won't save you from a colleague who feels like they need to "win" discussions.
 
 It's a tool to save time and overly-polite wrangling in a respectful dialogue. The goal is to help you communicate clearly and find the best path together, not just say the biggest number.
 

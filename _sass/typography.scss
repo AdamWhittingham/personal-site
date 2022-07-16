@@ -52,9 +52,7 @@ a {
 
 p{
   line-height: 1.75em;
-  & + p {
-    padding-top: 1.75em;
-  }
+  & + p { padding-top: 1em; }
 }
 
 li::marker { color: var(--headings)}

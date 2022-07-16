@@ -1,0 +1,18 @@
+body.dark{
+  nav .theme-toggle{
+    background: var(--back-light);
+    border: 1px solid var(--back-light);
+    &::before { background: var(--back-dark); }
+  }
+}
+
+body.light{
+  nav .theme-toggle{
+    background: var(--back-dark);
+    border: 1px solid var(--back-dark);
+    &::before {
+      background: var(--back-light);
+      right: 1px;
+    }
+  }
+}

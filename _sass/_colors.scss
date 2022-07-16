@@ -1,6 +1,11 @@
+:root {
+  --back-dark: #00103F;
+  --back-light: #C8C2C0;
+}
+
 body {
   --background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(3,3,66,1) 20%);
-  --back: #00103F;
+  --back: var(--back-dark);
   --text: #FFFFFF;
   --headings: #00FF60;
   --selection: #2050AF;
@@ -12,12 +17,12 @@ body {
 
 body.light {
   --background: linear-gradient(90deg, rgba(200,194,192,1) 0%, rgba(204,196,196,1) 20%);
-  --back: rgb(200,194,192);
+  --back: var(--back-light);
   --text: #00103F;
   --headings: #202020;
   --selection: #2050AF;
   --link: #000044;
-  --link-hover: #000044;
+  --link-hover: #00007D;
   --emphasis: #0022DB;
   --blockquote: rgba(0, 0, 0, 0.05);
 }

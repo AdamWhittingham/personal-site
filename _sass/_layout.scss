@@ -22,12 +22,34 @@ header{
     margin: 0;
   }
 
-  nav {
+  nav.main {
     @include content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     a {
       color: var(--text);
       text-decoration: none;
       border: none;
+    }
+
+    span.theme-toggle {
+      border-radius: 3px;
+      width: 1.5em;
+      height: 1em;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: calc(50% - 1px);
+        margin-left: 1px;
+        height: 90%;
+        top: 1px;
+        border-radius: 2px;
+      }
     }
   }
 }

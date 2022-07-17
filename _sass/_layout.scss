@@ -71,6 +71,10 @@ header{
   }
 }
 
+body.light header nav.main a:hover {
+  color: var(--emphasis);
+}
+
 .content{
   @include content;
 }

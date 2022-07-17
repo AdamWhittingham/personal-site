@@ -3,7 +3,8 @@ layout: default
 title: "Home"
 ---
 
-I'm a <em>UK-based software engineer</em> who enjoys reading, travelling and board games.
+# Hi!
+I'm a <em>software engineer</em> who enjoys reading, travelling and board games.
 
 I'm a Principal Engineer at <a href="https://cronofy.com">Cronofy</a>, building the best tools and APIs to <a href="https://cronofy.com">schedule everything for everyone</a>.
 

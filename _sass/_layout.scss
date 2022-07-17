@@ -33,6 +33,10 @@ header{
       color: var(--text);
       text-decoration: none;
       border: none;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        color: var(--headings);
+      }
     }
 
     span.theme-toggle {
@@ -40,6 +44,7 @@ header{
       width: 1.5em;
       height: 1em;
       position: relative;
+      cursor: pointer;
 
       &::before {
         content: '';
@@ -50,6 +55,9 @@ header{
         height: 90%;
         top: 1px;
         border-radius: 2px;
+        transition:
+          left 200ms ease-out,
+          right 200ms ease-out;
       }
     }
   }

@@ -2,7 +2,14 @@ body.dark{
   nav .theme-toggle{
     background: var(--back-light);
     border: 1px solid var(--back-light);
-    &::before { background: var(--back-dark); }
+    &::before {
+      background: var(--back-dark);
+      left: 1px;
+    }
+
+    &:hover::before {
+      left: 4px
+    }
   }
 }
 
@@ -13,6 +20,9 @@ body.light{
     &::before {
       background: var(--back-light);
       right: 1px;
+    }
+    &:hover::before {
+      right: 4px
     }
   }
 }

@@ -1,13 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@700&family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Syne&display=swap');
 
 :root {
   --font: 'Lato', sans-serif;
   --heading_font: 'Syne', sans-serif;
-}
-
-[data-theme="light"] {
-  --font: 'Alice', sans-serif;
-  --heading_font: 'Playfair Display', serif;
 }
 
 body {
@@ -68,7 +63,6 @@ li::marker { color: var(--headings)}
 em {
   color: var(--emphasis);
   font-style: normal;
-  font-weight: bold;
 }
 
 dl{

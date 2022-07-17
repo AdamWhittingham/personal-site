@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2rem;
-  margin: 1rem 0 0.25rem;
+  margin: 2rem 0 0.25rem;
 }
 
 h2 {
@@ -48,7 +48,6 @@ a {
 p{
   line-height: 1.75em;
   & + p { padding-top: 1em; }
-  & + blockquote { margin-top: 1em; }
 }
 
 li::marker { color: var(--headings)}
@@ -81,8 +80,12 @@ dl{
 blockquote {
   padding-left: 1em;
   background: var(--blockquote);
-  margin-bottom: 1em;
+  margin: 1em 0;
   p {
     line-height: 3em;
   }
+}
+
+ul {
+  margin: 0 0 1rem;
 }

@@ -7,7 +7,8 @@ For software engineers, this shows up in design discussions, pairing and code re
 
 It is hard to be respectful, concise and also convey how strongly held an opinion is. Is a comment in a code review just a suggestion or an essential comment which cannot be ignored?
 
-# A simple answer
+# How much do you care?
+
 There's a simple system that has really helped a few teams with these scenarios:
 
 <em>Assign how much you care about an opinion or comment out of ten.</em>

@@ -1,3 +1,7 @@
+---
+title: How much do you care?
+---
+
 A common problem in any team is deciding on what to actually do - we have nearly infinite ways to solve each problem, so it's not uncommon to end up with two or more opinions.
 For software engineers, this shows up in design discussions, pairing and code reviews.
 

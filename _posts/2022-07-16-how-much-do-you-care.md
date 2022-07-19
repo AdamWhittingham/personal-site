@@ -25,9 +25,9 @@ or
 
 This gives the reader an insight as to how vital this comment is without needing a lot of words; It's easy to see that a 1/10 issue is a minor matter of taste that could be addressed or ignored, while the 8/10 comment is a serious issue that needs some thought.
 
-This has also worked well when discussing solutions.
+For example, Alice and Bob disagree on the best design, and neither has managed to convince the other after a discussion. Alice is 7/10 confident while Bob is only 4/10, so they agree to go with Alice's choice.
 
-Alice and Bob disagree on the best design, and neither has managed to convince the other after a discussion. Alice is 7/10 confident while Bob is only 4/10, so they agree to go with Alice's choice.
+This has also worked well when discussing solutions in person - it's just become part of the way we communicate. Someone might make a statement and then say "That was all 3 out of 10 level stuff" and we all instantly have an understanding of the confidence and importance they wanted to convey.
 
 ## So what does the scale actually mean?
 The numbers themselves don't <i>mean</i> something concrete - there is not a formal definition. The goal is to make people consider the strength of their convictions; similar to tools like Planning Poker.

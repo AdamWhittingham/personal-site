@@ -16,13 +16,13 @@ body {
 }
 
 body.light {
-  --background: linear-gradient(135deg, rgba(200, 194, 192, 1) 0%, rgba(224, 216, 216, 1) 80%);
+  --background: linear-gradient(315deg, rgba(220, 220, 235, 1) 0%, rgba(224, 216, 216, 1) 80%);
   --back: var(--back-light);
   --text: #00103F;
   --headings: #202020;
-  --selection: #2050AF;
+  --selection: #7DB5E6;
   --link: #000044;
   --link-hover: #00007D;
-  --emphasis: #0022DB;
+  --emphasis: #142AA4;
   --blockquote: rgba(0, 0, 0, 0.05);
 }

@@ -52,11 +52,9 @@ p{
 
 li::marker { color: var(--headings)}
 
-::selection {
-  background: var(--selection)
-}
+::selection,
 ::-moz-selection {
-  background: var(--selection)
+  background: var(--selection);
 }
 
 em {

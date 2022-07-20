@@ -18,12 +18,11 @@
     border: 1px solid;
     border-radius: 5px;
     padding: 0.25rem;
-    color: var(--back);
-    background: var(--link);
+    color: var(--link);
     transition: all ease-in-out 0.2s;
 
     &:hover{
-      background: var(--text);
+      color: var(--headings);
     }
 
     &:not(:last-child) {

@@ -4,24 +4,24 @@
 }
 
 body {
-  --background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(3,3,66,1) 100%);
+  --background: linear-gradient(135deg, #020220 0%, #131330 100%);
   --back: var(--back-dark);
   --text: #FFFFFF;
-  --headings: #00FF60;
+  --headings: #20C020;
   --selection: #2050AF;
   --link: #DDDDFF;
   --link-hover: #AAAAFF;
-  --emphasis: #FFCB00;
+  --emphasis: #FFCB40;
   --blockquote: rgba(255, 255, 255, 0.2);
 }
 
 body.light {
-  --background: linear-gradient(315deg, rgba(220, 220, 235, 1) 0%, rgba(224, 216, 216, 1) 80%);
+  --background: linear-gradient(135deg, #D0D0DA 10%, #EBEBEF 90%);
   --back: var(--back-light);
-  --text: #00103F;
-  --headings: #202020;
+  --text: #00103A;
+  --headings: #1B22A1;
   --selection: #7DB5E6;
-  --link: #000044;
+  --link: #101461;
   --link-hover: #00007D;
   --emphasis: #142AA4;
   --blockquote: rgba(0, 0, 0, 0.05);

@@ -11,7 +11,7 @@ body {
   --selection: #2050AF;
   --link: #DDDDFF;
   --link-hover: #AAAAFF;
-  --blockquote: rgba(255, 255, 255, 0.2);
+  --blockquote: rgba(255, 255, 255, 0.1);
 
   --emphasis: var(--headings);
 }
@@ -24,5 +24,5 @@ body.light {
   --selection: #7DB5FF;
   --link: #3e46d0;
   --link-hover: #CA2B93;
-  --blockquote: rgba(0, 0, 0, 0.05);
+  --blockquote: rgba(255, 255, 255, 0.25);
 }

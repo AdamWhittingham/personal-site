@@ -10,10 +10,10 @@ body {
   --headings: #FFEB4B;
   --selection: #2050AF;
   --link: #DDDDFF;
-  --link-hover: #AAAAFF;
   --blockquote: rgba(255, 255, 255, 0.1);
 
   --emphasis: var(--headings);
+  --link-hover: rgba(255, 255, 255, 0.1);
 }
 
 body.light {
@@ -23,6 +23,5 @@ body.light {
   --headings: #0B48FF;
   --selection: #7DB5FF;
   --link: #3e46d0;
-  --link-hover: #CA2B93;
   --blockquote: rgba(255, 255, 255, 0.25);
 }

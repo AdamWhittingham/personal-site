@@ -1,28 +1,28 @@
 body.dark{
   nav .theme-toggle{
-    background: var(--back-light);
-    border: 1px solid var(--back-light);
+    background: #444488;
     &::before {
-      background: var(--back-dark);
-      left: 1px;
+      content: '🌒';
+      left: 0.25em;
     }
 
     &:hover::before {
-      left: 4px
+      content: '🌓';
+      left: 0.75em;
     }
   }
 }
 
 body.light{
   nav .theme-toggle{
-    background: var(--back-dark);
-    border: 1px solid var(--back-dark);
+    background: #66aaff;
     &::before {
-      background: var(--back-light);
-      right: 1px;
+      content: '🌔';
+      right: 0.25em;
     }
     &:hover::before {
-      right: 4px
+      content: '🌓';
+      right: 0.75em;
     }
   }
 }

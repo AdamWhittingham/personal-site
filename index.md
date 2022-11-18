@@ -33,6 +33,9 @@ I'm a Principal Engineer at <a href="https://cronofy.com">Cronofy</a>, building 
 # Social
 
 <div class="social">
+  <a rel="me" href="https://ruby.social/@ad">
+    <span class="fa-brands fa-mastodon"></span>
+  </a>
   <a href="https://twitter.com/adamwhittingham">
     <span class="fa-brands fa-twitter"></span>
   </a>

@@ -4,25 +4,25 @@
 }
 
 body {
-  --background: linear-gradient(135deg, #020220 0%, #131330 100%);
+  --background: linear-gradient(135deg, #0f315e 0%, #060941 100%);
   --back: var(--back-dark);
   --text: #FFFFFF;
   --headings: #FFEB4B;
   --selection: #2050AF;
   --link: #DDDDFF;
   --link-hover: #AAAAFF;
-  --emphasis: #FFCB40;
   --blockquote: rgba(255, 255, 255, 0.2);
+
+  --emphasis: var(--headings);
 }
 
 body.light {
-  --background: linear-gradient(135deg, #D0D0DA 10%, #EBEBEF 90%);
+  --background: linear-gradient(62deg, #cce5ff 0%, #f3e5ff 100%);
   --back: var(--back-light);
   --text: #00103A;
-  --headings: #1B22A1;
-  --selection: #7DB5E6;
-  --link: #101461;
-  --link-hover: #00007D;
-  --emphasis: #142AA4;
+  --headings: #0B48FF;
+  --selection: #7DB5FF;
+  --link: #3e46d0;
+  --link-hover: #CA2B93;
   --blockquote: rgba(0, 0, 0, 0.05);
 }

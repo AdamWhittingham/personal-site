@@ -1,28 +1,34 @@
 body.dark{
   nav .theme-toggle{
-    background: #444488;
+    background: #091740;
     &::before {
       content: '🌒';
       left: 0.25em;
     }
 
-    &:hover::before {
-      content: '🌓';
-      left: 0.75em;
+    &:hover{
+      background: #6385C1;
+      &::before {
+        content: '🌓';
+        left: 0.75em;
+      }
     }
   }
 }
 
 body.light{
   nav .theme-toggle{
-    background: #66aaff;
+    background: #b2dafd;
     &::before {
       content: '🌔';
       right: 0.25em;
     }
-    &:hover::before {
-      content: '🌓';
-      right: 0.75em;
+    &:hover{
+      background: #6385C1;
+      &::before {
+        content: '🌓';
+        right: 0.75em;
+      }
     }
   }
 }

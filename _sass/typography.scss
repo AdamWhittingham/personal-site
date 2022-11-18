@@ -50,7 +50,11 @@ p{
   & + p { padding-top: 1em; }
 }
 
-li::marker { color: var(--headings)}
+li{
+  & > p + p { padding-top: 0; }
+  &::marker { color: var(--headings)}
+}
+
 
 ::selection,
 ::-moz-selection {
@@ -76,12 +80,10 @@ dl{
 }
 
 blockquote {
-  padding-left: 1em;
+  padding: 1em 1em;
+  border-radius: 0 5px 5px 0;
   background: var(--blockquote);
   margin: 1em 0;
-  p {
-    line-height: 3em;
-  }
 }
 
 ul {

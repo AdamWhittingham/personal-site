@@ -87,12 +87,12 @@ blockquote {
   border-radius: 0 5px 5px 0;
   background: var(--blockquote);
   margin: 1em 0;
+}
 
-  cite{
-    display: block;
-    font-style: italic;
-    font-size: 0.75em;
-  }
+cite{
+  display: block;
+  font-style: italic;
+  font-size: 0.75em;
 }
 
 ul {

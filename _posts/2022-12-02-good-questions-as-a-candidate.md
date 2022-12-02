@@ -45,3 +45,5 @@ Try to root your questions in what _actually happens_ by asking for a _recent ex
 > When was the last time the values were reviewed and changed?
 >
 > How did that process happen?
+
+> How many conversations happen in public Slack channels vs direct messages?

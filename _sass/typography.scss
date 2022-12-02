@@ -52,11 +52,12 @@ p{
   & + p { padding-top: 1em; }
 }
 
-li{
+ol, li{
+  line-height: 1.75em;
   & > p + p { padding-top: 0; }
-  &::marker { color: var(--headings)}
 }
 
+li::marker { color: var(--headings)}
 
 ::selection,
 ::-moz-selection {

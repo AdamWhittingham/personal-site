@@ -2,6 +2,8 @@
 title: Good questions to ask as a candidate
 ---
 
+# Good questions to ask as a candidate
+
 The best interview processes will recognise that it is a _two way process_:
 - The organisation needs to know that you are capable of delivering the work and going to positively impact the culture
 - The candidate needs to know that this is a place that you are going to be able to do your best work

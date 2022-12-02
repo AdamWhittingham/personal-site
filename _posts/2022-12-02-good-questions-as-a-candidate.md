@@ -44,7 +44,7 @@ You're not going to have time to ask _all_ of these questions, so focus on the a
 
 > How much autonomy will I have?
 
-> How were your/the teams most recent objectives decided and communuicated?
+> How were your/the teams most recent objectives decided and communicated?
 
 > What is the process to order a book or go to a conference?
 
@@ -69,3 +69,6 @@ You're not going to have time to ask _all_ of these questions, so focus on the a
 > How hard do you find it to get time to discuss something with someone you don't work with daily?
 
 > How are big decisions recorded and communicated?
+
+> Can you tell me about a recent disagreement and how it was settled?
+> <cite>via [Mark Harbottle](http://markharbs.com)</cite>

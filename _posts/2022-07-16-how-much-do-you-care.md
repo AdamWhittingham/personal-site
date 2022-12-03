@@ -1,5 +1,6 @@
 ---
 title: How much do you care?
+description: "It's tough to convey how much something matters to you, or how certain you are on a course of action. This post describing a simple way to communicate all of that which has worked very well for several teams"
 ---
 
 A common problem in any team is deciding on what to actually do - we have nearly infinite ways to solve each problem, so it's not uncommon to end up with two or more opinions.

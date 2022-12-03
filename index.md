@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Home"
+description: "Projects and blog posts by Adam Whittingham, a Software Engineer in the UK."
 ---
 
 # Hi!

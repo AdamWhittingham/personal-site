@@ -122,6 +122,9 @@ These are loosely categorised to help find something while actually in an interv
 >
 > How many things are late or missed because of people being too busy or having forgotten?
 
+> What visibility does the average engineer have on the scale and performance of the system?
+>
+> What visibility does the most privileged engineer have?
 
 ## Role/Project Fit
 
@@ -135,6 +138,7 @@ These are loosely categorised to help find something while actually in an interv
 
 > What are the growth opportunities for someone in this role?
 > <cite>via [Garry Shutler][Garry]</cite>
+
 
 [MarkH]: http://markharbs.com
 [Garry]: https://gshutler.com/

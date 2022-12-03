@@ -48,4 +48,3 @@ I'm a Principal Engineer at <a href="https://cronofy.com">Cronofy</a>, building 
     <span class="fa-brands fa-linkedin"></span>
   </a>
 </div>
-

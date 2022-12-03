@@ -1,4 +1,4 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "adam.whittingham.dev"
 baseurl: ""
 title: "Ad Whittingham" # the name of your site, e.g. ACME Corp.
 

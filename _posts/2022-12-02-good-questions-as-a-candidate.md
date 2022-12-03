@@ -35,16 +35,12 @@ You're not going to have time to ask _all_ of these questions, so focus on the a
 
 
 # Useful questions/prompts
+These are loosely categorised to help find something while actually in an interview, but questions can easily overlap.
 
-> Can you tell me about a time something went badly?
->
-> What were the causes and the resolution?
->
-> How safe is it to make a mistake?
+## Company culture
 
-> What was done after your last live incident to ensure it didn't happen again?
-
-> How much autonomy will I have?
+> How does a feature go from an idea to being in front of customers?
+> <cite>via [Garry Shutler][Garry]</cite>
 
 > How were your/the teams most recent objectives decided and communicated?
 
@@ -56,21 +52,89 @@ You're not going to have time to ask _all_ of these questions, so focus on the a
 
 > How often are the company values often mentioned outside of the review/360 process?
 >
-> When was the last time the values were reviewed and changed?
+> When was the last time the company values were reviewed or changed?
 >
 > How did that process happen?
 
+> What would you change about your culture?
+> <cite>via [Garry Shutler][Garry]</cite>
+
 > How many conversations happen in public Slack channels vs direct messages?
 
-> How are new feature releases communicated both internally and externally?
+> How are big strategy decisions made, recorded and communicated?
 
-> How long did you last change take to go from reviewed/approved to in front of a customer?
+> How hard do you find it to get time to discuss issues with someone you don't work with daily?
+
+> Can you tell me about a recent disagreement and how it was settled?
+> <cite>via [Mark Harbottle][MarkH]</cite>
+
+> How do you ensure the company/department is working effectively?
+> <cite>via [Garry Shutler][Garry]</cite>
+
+> What is done to communicate these issues to the company and customers?
+
+> How does the company make it's money?
+>
+> What is done to provide stability and resilience in uncertain times?
+
+> What experience do the leadership team have of starting/scaling/running companies?
 
 > What are the shortest and longest running projects you've seen in the last year?
 
-> How hard do you find it to get time to discuss something with someone you don't work with daily?
 
-> How are big decisions recorded and communicated?
+## Engineering culture & practices
 
-> Can you tell me about a recent disagreement and how it was settled?
-> <cite>via [Mark Harbottle](http://markharbs.com)</cite>
+> Can you tell me about a time something went badly?
+>
+> What were the causes and the resolution?
+>
+> How safe is it to make a mistake?
+
+> What was done after your last live incident to ensure it didn't happen again?
+
+> What does being on call look like?
+> <cite>via [Garry Shutler][Garry]</cite>
+
+> How are live issues triaged and dealt with?
+
+> How are bugs managed?
+> <cite>via [Garry Shutler][Garry]</cite>
+
+> How long did your last change take to go from reviewed/approved to in front of a customer?
+
+> How are new feature releases communicated both internally and externally?
+
+> What's an area or project that people don't like working on?
+>
+> What's lead it into that state?
+>
+> Is there a plan to tackle it?
+
+> What is the biggest issue you are facing right now?
+>
+> What is the next bigger problem you foresee having?
+> <cite>via [Garry Shutler][Garry]</cite>
+
+> How do you know a feature is providing value?
+> <cite>via [Garry Shutler][Garry]</cite>
+
+> How automated are the processes for running the team?
+>
+> How many things are late or missed because of people being too busy or having forgotten?
+
+
+## Role/Project Fit
+
+> How much autonomy will I have?
+
+> What is the biggest challenge for <role/team>?
+
+> What would the perfect candidate have completed in 6 months?
+>
+> What do you think the most important obstacle to overcome is in that time frame?
+
+> What are the growth opportunities for someone in this role?
+> <cite>via [Garry Shutler][Garry]</cite>
+
+[MarkH]: http://markharbs.com
+[Garry]: https://gshutler.com/

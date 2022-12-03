@@ -19,10 +19,15 @@
     border-radius: 5px;
     padding: 0.25rem;
     color: var(--text);
-    transition: all ease-in-out 0.2s;
+
+    &, & svg {
+      transition: color fill stroke ease-in-out 0.2s;
+    }
 
     &:hover, &:hover > svg {
+      background: none;
       color: var(--headings);
+      stroke: var(--headings);
       fill: var(--headings);
     }
 
@@ -33,7 +38,7 @@
     svg {
       width: 1em;
       height: 1em;
-      color: var(--text);
+      stroke: var(--text);
       fill: var(--text);
     }
   }

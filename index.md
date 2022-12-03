@@ -38,7 +38,7 @@ I'm a Principal Engineer at <a href="https://cronofy.com">Cronofy</a>, building 
   <a rel="me" href="https://ruby.social/@ad" aria-label="View Adam's Mastodon profile">
     <span class="fa-brands fa-mastodon"></span>
   </a>
-  <a href="https://twitter.com/adamwhittingham"aria-label="View Adam's Twitter profile">
+  <a href="https://twitter.com/adamwhittingham" aria-label="View Adam's Twitter profile">
     <span class="fa-brands fa-twitter"></span>
   </a>
   <a href="https://github.com/AdamWhittingham" aria-label="View Adam's Github profile">
@@ -49,4 +49,3 @@ I'm a Principal Engineer at <a href="https://cronofy.com">Cronofy</a>, building 
   </a>
 </div>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all" />

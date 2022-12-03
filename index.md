@@ -33,16 +33,16 @@ I'm a Principal Engineer at <a href="https://cronofy.com">Cronofy</a>, building 
 # Social
 
 <div class="social">
-  <a rel="me" href="https://ruby.social/@ad">
+  <a rel="me" href="https://ruby.social/@ad" aria-label="View Adam's Mastodon profile">
     <span class="fa-brands fa-mastodon"></span>
   </a>
-  <a href="https://twitter.com/adamwhittingham">
+  <a href="https://twitter.com/adamwhittingham"aria-label="View Adam's Twitter profile">
     <span class="fa-brands fa-twitter"></span>
   </a>
-  <a href="https://github.com/AdamWhittingham">
+  <a href="https://github.com/AdamWhittingham" aria-label="View Adam's Github profile">
     <span class="fa-brands fa-github"></span>
   </a>
-  <a href="https://uk.linkedin.com/in/adamwhittingham">
+  <a href="https://uk.linkedin.com/in/adamwhittingham" aria-label="View Adam's LinkedIn profile">
     <span class="fa-brands fa-linkedin"></span>
   </a>
 </div>

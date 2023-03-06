@@ -76,7 +76,10 @@ It's not always clear what the smallest step is, but it is almost always worth t
 
 # Be Wrong Empathetically
 
-Imposter syndrome is often experienced at all levels, but it's possible to exaggerate it in more junior teammates when they see you easily complete something they are struggling with.
+The term "Authority Gradient" describes the perceived imbalance of power between colleagues of different seniorities. It has often been cited as a contributing factor to accidents, where a more junior person has spotted something or wanted to question something but has avoided it for fear of looking foolish or appearing to challenge their seniors.
+This is clearly a risk to software teams too, where we can have quite a wide spread of experience.
+
+Another omnipresent risk is Imposter syndrome; while it is experienced at all levels, it's possible to exaggerate it in more junior teammates when they see you easily complete something they are struggling with.
 
 Showing that we are fallible can help demystify the areas where building things are more art than science, and show that recovering from mistakes, learning from them and not beating yourself up are all skills too.
 

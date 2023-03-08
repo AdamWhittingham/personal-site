@@ -116,9 +116,18 @@ A vague option can lurk, fester and spread, adding bet-hedging code that may nev
 ## ...but not _too_ loudly
 
 All of the above advice served me very well. However, as I moved into roles with more influence, it's been important to remember that you can also say **too much**.
-For example, in situations with a large experience gap, a principal engineers half-baked wondering could become a junior devs project for the week.
+For example, in situations with a large experience gap, a principal engineer's half-baked wondering could become a junior devs project for the week.
 
 It's always important to be mindful of your audience, and be careful to only show more junior devs the process to derive an answer. Idle wondering in-front of a senior who knows enough to know a bad idea when they hear it is one thing, but be careful to explain a few options and _why_ you're recommending one over the other to more junior colleagues.
+
+
+# If you can't be wrong, be transparent
+
+Some situations are going to need your to lead much more directly; perhaps it's a live issue, or you have more context or insight into a time sensitive problem, and you can't afford to trade speed for harmony.
+There are two key rules for these times:
+1. **Don't appeal to your own authority**. No one has ever felt anything other than resentment as being told "because **I** said so!", regardless of the eventual outcome.
+2. Explain yourself. Perhaps not in detail right now, but show the working that makes you sure of your path over others. This at lease cussions the blow to someones ego, and in stressful situations it'll provide welcome releif that a wise and confident hand is on the tiller.
+
 
 [^1]: Apart from all the other ones.
 

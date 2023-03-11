@@ -17,12 +17,12 @@ body {
 }
 
 body.light {
-  --background: linear-gradient(62deg, #cce5ff 0%, #f3e5ff 100%);
+  --background: linear-gradient(62deg, #cfe8ff 0%, #f3e5ff 100%);
   --back: var(--back-light);
   --text: #00103A;
-  --headings: #0B48FF;
-  --selection: #7DB5FF;
-  --link: #3046D0;
+  --link: #060047;
+  --selection: #A2CBFE;
+  --headings: #B3005E;
   --blockquote: rgba(255, 255, 255, 0.25);
 }
 

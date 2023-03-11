@@ -5,10 +5,9 @@ description: "Projects and blog posts by Adam Whittingham, a Software Engineer i
 canonical_url: https://adam.whittingham.dev
 ---
 
-# Hi!
-I'm a <em>software engineer</em> who enjoys reading, D&D and making cool stuff.
+Hi, I'm Ad and I enjoy making things.
 
-I'm a Principal Engineer at <a href="https://cronofy.com">Cronofy</a>, building the best tools and APIs to <a href="https://cronofy.com">schedule everything for everyone</a>.
+I'm a <em>Principal Software Engineer</em> at <a href="https://cronofy.com">Cronofy</a>, building the best tools and APIs to <a href="https://cronofy.com">schedule everything for everyone</a>.
 
 # Posts
 

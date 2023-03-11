@@ -1,7 +1,6 @@
 ---
 title: Being wrong is awesome
 description: "How to build better engineering teams through humility and collaboration"
-draft: true
 home_summary: "Build better working relationships through the power of being wrong."
 ---
 

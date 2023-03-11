@@ -79,6 +79,8 @@ It's not always clear what the smallest step is, but it is almost always worth t
 The term "Authority Gradient" describes the perceived imbalance of power between colleagues of different seniorities. It has often been cited as a contributing factor to accidents, where a more junior person has spotted something or wanted to question something but has avoided it for fear of looking foolish or appearing to challenge their seniors.
 This is clearly a risk to software teams too, where we can have quite a wide spread of experience.
 
+It is also easy to prioritise your own satisfaction of solving a problem over another's. One of the most destructive things you can do to an engineer is **deny them the their sense of accomplishment**. It can be as blatant and accepting praise without sharing credit, or as subtle as denying others the chance to solve a problem for themselves or in collaboration,  but be mindful to **collaborate** and foster a sense of team success over individual when you can.
+
 Another omnipresent risk is Imposter syndrome; while it is experienced at all levels, it's possible to exaggerate it in more junior teammates when they see you easily complete something they are struggling with.
 
 Showing that we are fallible can help demystify the areas where building things are more art than science, and show that recovering from mistakes, learning from them and not beating yourself up are all skills too.
@@ -126,7 +128,14 @@ It's always important to be mindful of your audience, and be careful to only sho
 Some situations are going to need your to lead much more directly; perhaps it's a live issue, or you have more context or insight into a time sensitive problem, and you can't afford to trade speed for harmony.
 There are two key rules for these times:
 1. **Don't appeal to your own authority**. No one has ever felt anything other than resentment as being told "because **I** said so!", regardless of the eventual outcome.
-2. Explain yourself. Perhaps not in detail right now, but show the working that makes you sure of your path over others. This at lease cussions the blow to someones ego, and in stressful situations it'll provide welcome releif that a wise and confident hand is on the tiller.
+2. Explain yourself. Perhaps not in detail right now, but show the working that makes you sure of your path over others. This at lease cushions the blow to someones ego, and in stressful situations it'll provide welcome relief that a wise and confident hand is on the tiller.
+
+# Be wrong sometimes
+
+Being wrong helps to humanise one another, get people thinking, and foster trust and collaboration.
+But like so many things, it is just one tool. Leaning too hard on it so hard that people feel pandered to, or that you genuinely don't know what you're doing.
+
+However, as your experience gives you ready answers in more situations, it's important to not lose sight of the power of being wrong.
 
 
 [^1]: Apart from all the other ones.

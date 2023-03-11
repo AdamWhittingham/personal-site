@@ -1,6 +1,7 @@
 ---
 title: Good questions to ask as a candidate
 description: It can be tricky to get the most value out of the few questions you may be able to ask your interviewers. This post shares guidelines and EXamples of good questions to ask as a candidate for a technical job
+home_summary: "Find out if this organisation is the right fit for you"
 ---
 
 # Good questions to ask as a candidate

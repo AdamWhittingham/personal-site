@@ -11,13 +11,14 @@ I'm a <em>Principal Software Engineer</em> at <a href="https://cronofy.com">Cron
 
 # Posts
 
-<ul>
+<section class="posts">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+  <a class="post" href="{{ post.url }}">
+    <h3 class="post-title">{{ post.title }}</h3>
+    <span class="summary">{{ post.home_summary }}</span>
+  </a>
   {% endfor %}
-</ul>
+</section>
 
 # Projects
 

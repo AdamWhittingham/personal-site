@@ -1,11 +1,11 @@
 ---
 title: Being wrong is awesome
-description: 
+description: "How to build better engineering teams through humility and collaboration"
 draft: true
+home_summary: "Build better working relationships through the power of being wrong."
 ---
 
 # Being wrong is awesome!
-## (and here's how to be better at it)
 
 Engineers often prize being correct over most other things. After all, we are logical and want to make things as good as we possibly can.
 

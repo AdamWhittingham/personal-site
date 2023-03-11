@@ -1,0 +1,23 @@
+.posts{
+  a.post {
+    display: block;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid var(--link-hover);
+    transition: background ease-out 150ms;
+    & + a.post {
+      margin-top: 1rem;
+    }
+
+    h3.post-title{
+      margin-top: 0;
+    }
+    .summary{
+      color: var(--text);
+    }
+  }
+
+  li + li {
+    margin: 0.25rem 0;
+  }
+}

@@ -1,15 +1,15 @@
 :root {
-  --back-dark: #00103F;
+  --back-dark: #060941;
   --back-light: #C8C2C0;
 }
 
 body {
-  --background: linear-gradient(135deg, #0f315e 0%, #060941 100%);
+  --background: linear-gradient(135deg, #1f315e 0%, #060941 100%);
   --back: var(--back-dark);
   --text: #FFFFFF;
-  --headings: #FFDF4B;
-  --selection: #2050AF;
-  --link: #DDDDFF;
+  --headings: #1ED7BE;
+  --selection: #027BCE;
+  --link: #4BB3FD;
   --blockquote: rgba(255, 255, 255, 0.1);
 
   --emphasis: var(--headings);

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>How much do you care? | Ad Whittingham</title>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lora&family=Syne&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Syne&display=swap">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+    <meta name="description" content="It's tough to convey how much something matters to you, or how certain you are on a course of action. This post describing a simple way to communicate all of that which has worked very well for several teams">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>How much do you care? | Ad Whittingham</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="How much do you care?" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="It’s tough to convey how much something matters to you, or how certain you are on a course of action. This post describing a simple way to communicate all of that which has worked very well for several teams" />
+<meta property="og:description" content="It’s tough to convey how much something matters to you, or how certain you are on a course of action. This post describing a simple way to communicate all of that which has worked very well for several teams" />
+<link rel="canonical" href="https://adam.whittingham.dev/posts/how-much-do-you-care.html" />
+<meta property="og:url" content="https://adam.whittingham.dev/posts/how-much-do-you-care.html" />
+<meta property="og:site_name" content="Ad Whittingham" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-07-16T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="How much do you care?" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-07-16T00:00:00+00:00","datePublished":"2022-07-16T00:00:00+00:00","description":"It’s tough to convey how much something matters to you, or how certain you are on a course of action. This post describing a simple way to communicate all of that which has worked very well for several teams","headline":"How much do you care?","mainEntityOfPage":{"@type":"WebPage","@id":"https://adam.whittingham.dev/posts/how-much-do-you-care.html"},"url":"https://adam.whittingham.dev/posts/how-much-do-you-care.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+    <header>
+      <nav class="main">
+        <h1>
+          <a href="/">Ad Whittingham</a>
+        </h1>
+        <span class="theme-toggle"></span>
+      </nav>
+    </header>
+    <main>
+      <div class="content">
+        <article>
+  <p>A common problem in any team is deciding on what to actually do - we have nearly infinite ways to solve each problem, so it’s not uncommon to end up with two or more opinions.
+For software engineers, this shows up in design discussions, pairing and code reviews.</p>
+
+<p>It is hard to be respectful, concise and also convey how strongly held an opinion is. Is a comment in a code review just a suggestion or an essential comment which cannot be ignored?</p>
+
+<h1 id="how-much-do-you-care">How much do you care?</h1>
+
+<p>There’s a simple system that has really helped a few teams with these scenarios:</p>
+
+<p><em>Assign how much you care about an opinion or comment out of ten.</em></p>
+
+<p>This gives an instant reflection of how confident you are, or how important you think a comment is.</p>
+
+<p>For example, during a code review I’ll write something like:</p>
+<blockquote>
+  <p>1/10: this would be easier to read if split over 3 lines.</p>
+</blockquote>
+
+<p>or</p>
+
+<blockquote>
+  <p>8/10: this will cause a breaking change for accounts with X enabled.</p>
+</blockquote>
+
+<p>This gives the reader an insight as to how vital this comment is without needing a lot of words; It’s easy to see that a 1/10 issue is a minor matter of taste that could be addressed or ignored, while the 8/10 comment is a serious issue that needs some thought.</p>
+
+<p>For example, Alice and Bob disagree on the best design, and neither has managed to convince the other after a discussion. Alice is 7/10 confident while Bob is only 4/10, so they agree to go with Alice’s choice.</p>
+
+<p>This has also worked well when discussing solutions in person - it’s just become part of the way we communicate. Someone might make a statement and then say “That was all 3 out of 10 level stuff” and we all instantly have an understanding of the confidence and importance they wanted to convey.</p>
+
+<h2 id="so-what-does-the-scale-actually-mean">So what does the scale actually mean?</h2>
+<p>The numbers themselves don’t <i>mean</i> something concrete - there is not a formal definition. The goal is to make people consider the strength of their convictions; similar to tools like Planning Poker.</p>
+
+<p>However it can be useful to have a rough guideline to foster a common understanding so here’s an outline of how I think of it:</p>
+
+<table class="definitions">
+  <tr>
+    <td><em>1/10</em></td>
+    <td>Very optional feedback (almost always about stylistic choice around formatting)</td>
+  </tr>
+
+  <tr>
+    <td><em>3/10</em></td>
+    <td>Far from critical but made me frown; others will probably notice or be distracted by it. I use this as the threshold for still approving a PR without wanting more of a discussion.</td>
+  </tr>
+
+  <tr>
+    <td><em>5/10</em></td>
+    <td>This issue feels important and needs reconsidering/discussing</td>
+  </tr>
+
+  <tr>
+    <td><em>7/10</em></td>
+    <td>This is important and I think I may have a better idea here</td>
+  </tr>
+
+  <tr>
+    <td><em>10/10</em></td>
+    <td>This will literally destroy the company/team/customers/planet</td>
+  </tr>
+</table>
+
+<h2 id="what-if-someone-always-picks-a-high-number">What if someone always picks a high number?</h2>
+<p>This system won’t save you from a colleague who feels like they need to “win” discussions.</p>
+
+<p>It’s a tool to save time and overly-polite wrangling in a respectful dialogue. The goal is to help you communicate clearly and find the best path together, not just say the biggest number.</p>
+
+<p>I’ve benefited greatly from the time saved and clearer gauge of how much things matter to my colleagues, and I hope this helps you and your team achieve the same!</p>
+
+</article>
+
+      </div>
+    </main>
+  </body>
+</html>

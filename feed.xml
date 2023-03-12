@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://adam.whittingham.dev/feed.xml" rel="self" type="application/atom+xml" /><link href="https://adam.whittingham.dev/" rel="alternate" type="text/html" /><updated>2023-03-12T16:19:05+00:00</updated><id>https://adam.whittingham.dev/feed.xml</id><title type="html">Ad Whittingham</title><entry><title type="html">Being wrong is awesome</title><link href="https://adam.whittingham.dev/posts/being-wrong-is-awesome.html" rel="alternate" type="text/html" title="Being wrong is awesome" /><published>2023-02-28T00:00:00+00:00</published><updated>2023-02-28T00:00:00+00:00</updated><id>https://adam.whittingham.dev/posts/being-wrong-is-awesome</id><content type="html" xml:base="https://adam.whittingham.dev/posts/being-wrong-is-awesome.html"><![CDATA[<h1 id="being-wrong-is-awesome">Being wrong is awesome!</h1>
+
+<p>Engineers often prize being correct over most other things. After all, we are logical and want to make things as good as we possibly can.</p>
+
+<p>Unfortunately, this makes certain types of conflict much more prevalent; many of us have worked with someone who is really smart and accustomed to being right. Maybe this is you; it’s certainly been me at least twice.
+This adds friction into our teams, and friction generates heat and wears things down.</p>
+
+<p>It’s a delicate topic when we’re talking about the people we work with, but it comes up often enough that is worth some thought.
+The answer isn’t to empower a gifted “lone wolf” - that just sidesteps the issue and creates a single point of failure.</p>
+
+<p>So what can we personally do to mitigate it?</p>
+
+<h1 id="be-wrong-sometimes">Be Wrong Sometimes</h1>
+
+<p>An unfortunate pattern I’ve seen play out more than once is the smart engineer who is <em>often</em> right: so often that they find it difficult to be wrong.
+They might make snide remarks like “If we’d built it my way instead, this wouldn’t be an issue” or bring up their pet rework project every planning session, despite the idea being thoroughly discussed and decided it wasn’t going to provide enough benefit for at least a few years.</p>
+
+<p>The team dynamics quickly shifted into factions:</p>
+<ul>
+  <li>The majority of the team found the person in question abrasive and hard to work with, resenting their good advice and trying to keep any new decisions out of earshot.</li>
+  <li>The engineer in question became increasingly pushy in trying to be heard and trying to force their will on the team 100% of the time.</li>
+</ul>
+
+<p>Often, the difficult engineer would have one or two people who vehemently agreed with them <em>in private</em>, stoking the righteous fury that things were not as good they could be.
+Arguments were rehashed often, with decreasing respect, as both sides tired of the others perceived stubbornness.</p>
+
+<p>In each case, the result was the same: trenches were dug and the team became highly dysfunctional until major interventions occurred.</p>
+
+<p>While there are many great posts, books and talks on how to resolve conflicts like this, prevention is better than cure.</p>
+
+<p>This is where the first quote really hit home with me:</p>
+
+<blockquote>
+  <p>Never win more than 70% of the time.
+<cite>[Citation needed]<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></cite></p>
+</blockquote>
+
+<p>This advice really hits the mark in two different ways:</p>
+<ul>
+  <li>If you are often right, it reminds you to be humble and help coach teammates so they get the win.</li>
+  <li>If you are struggling with obstinate colleagues, it helps you de-escalate your contribution to the dynamic by deliberately avoiding being the one with the answer every time.</li>
+</ul>
+
+<p>This advice does not mean “just shut up” or “argue the ridiculous to lose on purpose” - both of these options are going to deprive the team of your expertise or compromise your integrity and add to a feeling of immaturity around conflict.</p>
+
+<p>Instead, shift your focus to asking better questions as neutrally as possible, and facilitate discussion towards a decent solution.
+Even if it’s not the <em>best</em> answer, help those around you work through it: give them the benefit of your expertise not by telling them an answer, but by making them think though the pitfalls they’ve not spotted yet. Make sure others are the ones in the spotlight.</p>
+
+<p>By shifting into this mode at least 30% of the time, you can not only avoid fueling resentment, but you can still provide value in a way that helps your colleagues grow and makes you a better communicator.</p>
+
+<h1 id="be-wrong-scientifically">Be Wrong Scientifically</h1>
+
+<p>One of the most precious resources we are trusted with as more senior engineers, is the time of those we are working with. This is both expensive in terms of raw capital used to pay everyone, as well as in the social capital that we gain when we help everyone succeed.</p>
+
+<p>Failing to deliver carries a negative connotations, but most companies are trying to do things that haven’t been done before; this paradox of “break the mould but in a reliable way with no missteps” is probably one of the biggest contributing to poor performance in Software Engineering teams<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</p>
+
+<p>We also learn most when we’re right on the edge of our comfort zone, and that means trying things that may not pan out.</p>
+
+<blockquote>
+  <p>I can accept failure, everyone fails at something. But I can’t accept not trying.
+<cite>Michael Jordan</cite></p>
+</blockquote>
+
+<p>Thankfully there’s a huge amount we can borrow from other fields to take sensible gambles.
+By far the biggest one is to always find the smallest step we can take from here to something that will generate feedback.</p>
+
+<p>Sometimes this is easy an obvious, but other times not so much, and we need to go a bit off the path to find it.</p>
+
+<p>A recent example is in building a logging/journal system, where we wanted to optimise for high throughput. However, writing all the data to disk isn’t very useful unless we can retrieve it too. This means the smallest features we could think to build amounted to half of the system - a journal writer and some indexer to perform basic queries against.
+We discussed ways to find something smaller or easier to gain feedback that both sides could be fast enough.
+The smart decision was to write the files with filenames that included the three fields we wanted to query by in the filename. No longer would we need to to build a whole indexer to query - for a minimum viable product, we could use good old <code class="language-plaintext highlighter-rouge">find</code>, or <code class="language-plaintext highlighter-rouge">ls</code> and <code class="language-plaintext highlighter-rouge">grep</code>. This halved what we needed to build and we had something working just about quick enough inside of 3 weeks instead of 6+.</p>
+
+<p>It’s not always clear what the smallest step is, but it is almost always worth taking a small detour now to guarantee confidence tomorrow, rather than trying to build the perfect system and not getting confidence for two weeks.</p>
+
+<h1 id="be-wrong-empathetically">Be Wrong Empathetically</h1>
+
+<p>The term “Authority Gradient” describes the perceived imbalance of power between colleagues of different seniorities. It has often been cited as a contributing factor to accidents, where a more junior person has spotted something or wanted to question something but has avoided it for fear of looking foolish or appearing to challenge their seniors.
+This is clearly a risk to software teams too, where we can have quite a wide spread of experience.</p>
+
+<p>It is also easy to prioritise your own satisfaction of solving a problem over another’s. One of the most destructive things you can do to an engineer is <strong>deny them their sense of accomplishment</strong>. It can be as blatant and accepting praise without sharing credit, or as subtle as denying others the chance to solve a problem for themselves or in collaboration,  but be mindful to <strong>collaborate</strong> and foster a sense of team success over individual when you can.</p>
+
+<p>Another omnipresent risk is Imposter syndrome; while it is experienced at all levels, it’s possible to exaggerate it in more junior teammates when they see you easily complete something they are struggling with.</p>
+
+<p>Showing that we are fallible can help demystify the areas where building things are more art than science, and show that recovering from mistakes, learning from them and not beating yourself up are all skills too.</p>
+
+<blockquote>
+  <p>Mistakes should be examined, learned from, and discarded; not dwelled upon and stored.
+<cite>Tim Fargo</cite></p>
+</blockquote>
+
+<p>Dwelling on mistakes is something that I’ve spent far too much energy on in the past, and that brainpower could be spent on fixing the issue rather than replaying the mistakes. I hope to help those around me accept, learn and recover faster than I have in the past.</p>
+
+<p>I find it useful, both for the team and myself, to share a short summary of mistakes that have happened. This can be written or, if short enough, said at a retrospective or stand-up meeting. The recipe is simple:</p>
+
+<ol>
+  <li>Concise summary of what happened</li>
+  <li>How the mistake was made</li>
+  <li>How it was spotted</li>
+  <li>How it was repaired</li>
+  <li>What we learned or setup to prevent similar issues in the future.</li>
+</ol>
+
+<h1 id="be-wrong-loudly">Be Wrong Loudly</h1>
+
+<p>I often advocate for working through problems and thought-processes aloud when possible, but there is a hidden gotcha in this too. Being too vague around key mechanisms can really cause a focussed team to suddenly diverge just as momentum is building. For example, knowing that you are building 3 components that will pass data around is fine, but deciding that data will be JSON with certain pre-designed keys can vastly de-risk a project.</p>
+
+<p>This is where another excellent quote comes in:</p>
+
+<blockquote>
+  <p>Vague sticks around, but Wrong gets Corrected
+<cite>Tanya Reilly - <a href="https://www.oreilly.com/library/view/the-staff-engineers/9781098118723/">The Staff Engineers Path</a></cite></p>
+</blockquote>
+
+<p>It’s better to decide <em>something</em> to the resolution that it can be worked with and built again, even if that thing is wrong.</p>
+<ul>
+  <li>A vague “A will talk to B, which will do something and pass it to C” leaves the door open for hesitation and inconsistency.</li>
+  <li>With a defined common idea, there is almost no chance that incompatible decisions will be made, even though there is <em>some</em> chance it’ll need to be changed for other reasons.</li>
+</ul>
+
+<p>The assertion might be wrong, but it’ll definitely be spotted and discussed or documented if it doesn’t work.
+A vague option can lurk, fester and spread, adding bet-hedging code that may never be removed or discussed.</p>
+
+<h2 id="but-not-too-loudly">…but not <em>too</em> loudly</h2>
+
+<p>All of the above advice served me very well. However, as I moved into roles with more influence, it’s been important to remember that you can also say <strong>too much</strong>.
+For example, in situations with a large experience gap, a principal engineer’s half-baked wondering could become a junior devs project for the week.</p>
+
+<p>It’s always important to be mindful of your audience, and be extra mindful to show more junior devs the process to derive an answer. Idle wondering in-front of a senior who knows enough to know a bad idea when they hear it is one thing, but be careful to explain a few options and <em>why</em> you’re recommending one over the other to more junior colleagues.</p>
+
+<h1 id="if-you-cant-be-wrong-be-transparent">If you can’t be wrong, be transparent</h1>
+
+<p>Some situations are going to need you to lead much more directly; perhaps it’s a live issue, or you have more context or insight into a time sensitive problem, and you can’t afford to trade speed for harmony.
+There are two key rules for these times:</p>
+<ol>
+  <li><strong>Don’t appeal to your own authority</strong>. No one has ever felt anything other than resentment as being told “because <strong>I</strong> said so!”, regardless of the eventual outcome.</li>
+  <li>Explain yourself. Perhaps not in detail right now, but show the working that makes you sure of your path over others. This at least cushions the blow to someones ego, and in stressful situations it’ll provide welcome relief that a wise and confident hand is on the tiller.</li>
+</ol>
+
+<h1 id="be-wrong-sometimes-1">Be wrong. Sometimes</h1>
+
+<p>Being wrong helps to humanise one another, makes space for everyone to contribute, and fosters trust and collaboration.
+But like so many things, it is just one tool. Leaning too hard on it so hard that people feel pandered to, or that you genuinely don’t know what you’re doing.</p>
+
+<p>However, as your experience gives you ready answers in more situations, it’s important to not lose sight of the power of being wrong.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I can’t find the source for this but I heard it once and it really stuck with me - if you know where it is from then please <a href="/">get in touch</a>! <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Apart from all the other ones. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><summary type="html"><![CDATA[How to build better engineering teams through humility and collaboration]]></summary></entry><entry><title type="html">Good questions to ask as a candidate</title><link href="https://adam.whittingham.dev/posts/good-questions-as-a-candidate.html" rel="alternate" type="text/html" title="Good questions to ask as a candidate" /><published>2022-12-02T00:00:00+00:00</published><updated>2022-12-02T00:00:00+00:00</updated><id>https://adam.whittingham.dev/posts/good-questions-as-a-candidate</id><content type="html" xml:base="https://adam.whittingham.dev/posts/good-questions-as-a-candidate.html"><![CDATA[<h1 id="good-questions-to-ask-as-a-candidate">Good questions to ask as a candidate</h1>
+
+<p>The best interview processes will recognise that it is a <em>two way process</em>:</p>
+<ul>
+  <li>The organisation needs to know that you are capable of delivering the work and going to positively impact the culture</li>
+  <li>The candidate needs to know that this is a place that you are going to be able to do your best work</li>
+</ul>
+
+<p>As a candidate, you should get a chance to ask some questions and learn as much as you can about what it is <em>actually like</em> to work there.</p>
+
+<p>This can be daunting, so I’m keeping this page updated with a list of questions I’ve asked or been asked that have given some really great insights or triggered interesting conversations.</p>
+
+<p>If you have any that you’ve used or heard, then please let me know! My social links can be found <a href="/">on my homepage</a>.</p>
+
+<h1 id="general-tips">General tips</h1>
+<h2 id="real-examples-are-better-than-abstract-ideals">Real examples are better than abstract ideals</h2>
+<p>Try to root your questions in what <em>actually happens</em> by asking for a <em>recent example</em> rather than an opinion.</p>
+
+<p>“How would you deal with a production issue?” invites someone to tell your their ideal process, whereas
+“Can you tell me about how a recent issue was resolved” asks someone to recall what happened.</p>
+
+<h2 id="be-realistic">Be realistic</h2>
+<p>Taken the wrong way, some of these questions can sound judgemental.</p>
+
+<p>No organisation is perfect, so be aware that you could be putting someone on the spot - they are going to want to show their organisation in a good light.</p>
+
+<p>Be especially alert for anyone acting defensively or embarrassed - it’s important to be respectful and reiterate that you want to know the reality of the job you’d be doing, and that it’s unrealistic to expect perfect.</p>
+
+<p>At the same time, don’t be fobbed off! We do our best work when we’re engaged and nothing will kill that faster than finding out that the culture doesn’t align with your values or that your role doesn’t match what you expected to be doing.</p>
+
+<h2 id="be-tactical">Be tactical</h2>
+<p>You’re not going to have time to ask <em>all</em> of these questions, so focus on the areas you have the most doubts and care about the most.</p>
+
+<h1 id="useful-questionsprompts">Useful questions/prompts</h1>
+<p>These are loosely categorised to help find something while actually in an interview, but questions can easily overlap.</p>
+
+<h2 id="company-culture">Company culture</h2>
+
+<blockquote>
+  <p>How does a feature go from an idea to being in front of customers?
+<cite>via <a href="https://gshutler.com/">Garry Shutler</a></cite></p>
+</blockquote>
+
+<blockquote>
+  <p>How were your/the teams most recent objectives decided and communicated?</p>
+</blockquote>
+
+<blockquote>
+  <p>What is the process to order a book or go to a conference?</p>
+</blockquote>
+
+<blockquote>
+  <p>Who is involved in designing features?</p>
+
+  <p>How does that process ensure a wide range of viewpoints are considered?</p>
+</blockquote>
+
+<blockquote>
+  <p>How often are the company values often mentioned outside of the review/360 process?</p>
+
+  <p>When was the last time the company values were reviewed or changed?</p>
+
+  <p>How did that process happen?</p>
+</blockquote>
+
+<blockquote>
+  <p>What would you change about your culture?
+<cite>via <a href="https://gshutler.com/">Garry Shutler</a></cite></p>
+</blockquote>
+
+<blockquote>
+  <p>How many conversations happen in public Slack channels vs direct messages?</p>
+</blockquote>
+
+<blockquote>
+  <p>How are big strategy decisions made, recorded and communicated?</p>
+</blockquote>
+
+<blockquote>
+  <p>How hard do you find it to get time to discuss issues with someone you don’t work with daily?</p>
+</blockquote>
+
+<blockquote>
+  <p>Can you tell me about a recent disagreement and how it was settled?
+<cite>via <a href="http://markharbs.com">Mark Harbottle</a></cite></p>
+</blockquote>
+
+<blockquote>
+  <p>How do you ensure the company/department is working effectively?
+<cite>via <a href="https://gshutler.com/">Garry Shutler</a></cite></p>
+</blockquote>
+
+<blockquote>
+  <p>What is done to communicate these issues to the company and customers?</p>
+</blockquote>
+
+<blockquote>
+  <p>How does the company make it’s money?</p>
+
+  <p>What is done to provide stability and resilience in uncertain times?</p>
+</blockquote>
+
+<blockquote>
+  <p>What experience do the leadership team have of starting/scaling/running companies?</p>
+</blockquote>
+
+<blockquote>
+  <p>What are the shortest and longest running projects you’ve seen in the last year?</p>
+</blockquote>
+
+<h2 id="engineering-culture--practices">Engineering culture &amp; practices</h2>
+
+<blockquote>
+  <p>Can you tell me about a time something went badly?</p>
+
+  <p>What were the causes and the resolution?</p>
+
+  <p>How safe is it to make a mistake?</p>
+</blockquote>
+
+<blockquote>
+  <p>What was done after your last live incident to ensure it didn’t happen again?</p>
+</blockquote>
+
+<blockquote>
+  <p>What does being on call look like?
+<cite>via <a href="https://gshutler.com/">Garry Shutler</a></cite></p>
+</blockquote>
+
+<blockquote>
+  <p>How are live issues triaged and dealt with?</p>
+</blockquote>
+
+<blockquote>
+  <p>How are bugs managed?
+<cite>via <a href="https://gshutler.com/">Garry Shutler</a></cite></p>
+</blockquote>
+
+<blockquote>
+  <p>How long did your last change take to go from reviewed/approved to in front of a customer?</p>
+</blockquote>
+
+<blockquote>
+  <p>How are new feature releases communicated both internally and externally?</p>
+</blockquote>
+
+<blockquote>
+  <p>What’s an area or project that people don’t like working on?</p>
+
+  <p>What’s lead it into that state?</p>
+
+  <p>Is there a plan to tackle it?</p>
+</blockquote>
+
+<blockquote>
+  <p>What is the biggest issue you are facing right now?</p>
+
+  <p>What is the next bigger problem you foresee having?
+<cite>via <a href="https://gshutler.com/">Garry Shutler</a></cite></p>
+</blockquote>
+
+<blockquote>
+  <p>How do you know a feature is providing value?
+<cite>via <a href="https://gshutler.com/">Garry Shutler</a></cite></p>
+</blockquote>
+
+<blockquote>
+  <p>How automated are the processes for running the team?</p>
+
+  <p>How many things are late or missed because of people being too busy or having forgotten?</p>
+</blockquote>
+
+<blockquote>
+  <p>What visibility does the average engineer have on the scale and performance of the system?</p>
+
+  <p>What visibility does the most privileged engineer have?</p>
+</blockquote>
+
+<h2 id="roleproject-fit">Role/Project Fit</h2>
+
+<blockquote>
+  <p>How much autonomy will I have?</p>
+</blockquote>
+
+<blockquote>
+  <p>What is the biggest challenge for &lt;role/team&gt;?</p>
+</blockquote>
+
+<blockquote>
+  <p>What would the perfect candidate have completed in 6 months?</p>
+
+  <p>What do you think the most important obstacle to overcome is in that time frame?</p>
+</blockquote>
+
+<blockquote>
+  <p>What are the growth opportunities for someone in this role?
+<cite>via <a href="https://gshutler.com/">Garry Shutler</a></cite></p>
+</blockquote>]]></content><author><name></name></author><summary type="html"><![CDATA[It can be tricky to get the most value out of the few questions you may be able to ask your interviewers. This post shares guidelines and EXamples of good questions to ask as a candidate for a technical job]]></summary></entry><entry><title type="html">How much do you care?</title><link href="https://adam.whittingham.dev/posts/how-much-do-you-care.html" rel="alternate" type="text/html" title="How much do you care?" /><published>2022-07-16T00:00:00+00:00</published><updated>2022-07-16T00:00:00+00:00</updated><id>https://adam.whittingham.dev/posts/how-much-do-you-care</id><content type="html" xml:base="https://adam.whittingham.dev/posts/how-much-do-you-care.html"><![CDATA[<p>A common problem in any team is deciding on what to actually do - we have nearly infinite ways to solve each problem, so it’s not uncommon to end up with two or more opinions.
+For software engineers, this shows up in design discussions, pairing and code reviews.</p>
+
+<p>It is hard to be respectful, concise and also convey how strongly held an opinion is. Is a comment in a code review just a suggestion or an essential comment which cannot be ignored?</p>
+
+<h1 id="how-much-do-you-care">How much do you care?</h1>
+
+<p>There’s a simple system that has really helped a few teams with these scenarios:</p>
+
+<p><em>Assign how much you care about an opinion or comment out of ten.</em></p>
+
+<p>This gives an instant reflection of how confident you are, or how important you think a comment is.</p>
+
+<p>For example, during a code review I’ll write something like:</p>
+<blockquote>
+  <p>1/10: this would be easier to read if split over 3 lines.</p>
+</blockquote>
+
+<p>or</p>
+
+<blockquote>
+  <p>8/10: this will cause a breaking change for accounts with X enabled.</p>
+</blockquote>
+
+<p>This gives the reader an insight as to how vital this comment is without needing a lot of words; It’s easy to see that a 1/10 issue is a minor matter of taste that could be addressed or ignored, while the 8/10 comment is a serious issue that needs some thought.</p>
+
+<p>For example, Alice and Bob disagree on the best design, and neither has managed to convince the other after a discussion. Alice is 7/10 confident while Bob is only 4/10, so they agree to go with Alice’s choice.</p>
+
+<p>This has also worked well when discussing solutions in person - it’s just become part of the way we communicate. Someone might make a statement and then say “That was all 3 out of 10 level stuff” and we all instantly have an understanding of the confidence and importance they wanted to convey.</p>
+
+<h2 id="so-what-does-the-scale-actually-mean">So what does the scale actually mean?</h2>
+<p>The numbers themselves don’t <i>mean</i> something concrete - there is not a formal definition. The goal is to make people consider the strength of their convictions; similar to tools like Planning Poker.</p>
+
+<p>However it can be useful to have a rough guideline to foster a common understanding so here’s an outline of how I think of it:</p>
+
+<table class="definitions">
+  <tr>
+    <td><em>1/10</em></td>
+    <td>Very optional feedback (almost always about stylistic choice around formatting)</td>
+  </tr>
+
+  <tr>
+    <td><em>3/10</em></td>
+    <td>Far from critical but made me frown; others will probably notice or be distracted by it. I use this as the threshold for still approving a PR without wanting more of a discussion.</td>
+  </tr>
+
+  <tr>
+    <td><em>5/10</em></td>
+    <td>This issue feels important and needs reconsidering/discussing</td>
+  </tr>
+
+  <tr>
+    <td><em>7/10</em></td>
+    <td>This is important and I think I may have a better idea here</td>
+  </tr>
+
+  <tr>
+    <td><em>10/10</em></td>
+    <td>This will literally destroy the company/team/customers/planet</td>
+  </tr>
+</table>
+
+<h2 id="what-if-someone-always-picks-a-high-number">What if someone always picks a high number?</h2>
+<p>This system won’t save you from a colleague who feels like they need to “win” discussions.</p>
+
+<p>It’s a tool to save time and overly-polite wrangling in a respectful dialogue. The goal is to help you communicate clearly and find the best path together, not just say the biggest number.</p>
+
+<p>I’ve benefited greatly from the time saved and clearer gauge of how much things matter to my colleagues, and I hope this helps you and your team achieve the same!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[It's tough to convey how much something matters to you, or how certain you are on a course of action. This post describing a simple way to communicate all of that which has worked very well for several teams]]></summary></entry></feed>

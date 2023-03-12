@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Merriweather&display=swap");
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Remove default margin */
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd { margin: 0; }
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'], ol[role='list'] { list-style: none; }
+
+/* Set core root defaults */
+html:focus-within { scroll-behavior: smooth; }
+
+/* Set core body defaults */
+body { min-height: 100vh; text-rendering: optimizeSpeed; line-height: 1.5; }
+
+/* Make images easier to work with */
+img, picture { max-width: 100%; display: block; }
+
+/* Inherit fonts for inputs and buttons */
+input, button, textarea, select { font: inherit; }
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) { html:focus-within { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
+
+:root { --back-dark: #060941; --back-light: #C8C2C0; }
+
+body { --background: linear-gradient(135deg, #102850 0%, #060941 100%); --back: var(--back-dark); --text: #FFFFFF; --headings: #1ED7BE; --selection: #027BCE; --link: #4BB3FD; --blockquote: rgba(255, 255, 255, 0.1); --emphasis: var(--headings); --link-hover: rgba(255, 255, 255, 0.1); }
+
+body.light { --background: linear-gradient(62deg, #e2f0ff 0%, #f3e5ff 100%); --back: var(--back-light); --text: #00103A; --link: #060047; --selection: #A2CBFE; --headings: #B3005E; --blockquote: rgba(255, 255, 255, 0.25); --link-hover: rgba(255, 255, 255, 0.25); }
+
+html { background: #2050AF; }
+
+:root { --font: 'Merriweather', serif; --heading_font: 'Barlow Semi Condensed', sans-serif; }
+
+body { font-family: var(--font); }
+
+h1, h2, h3, h4, h5, h6 { color: var(--headings); font-family: var(--heading_font); margin: 0; }
+
+h1 { font-size: 2.5rem; font-weight: 500; }
+
+h2 { font-size: 2rem; font-weight: 500; }
+
+h3, h4, h5, h6 { font-size: 1.5rem; font-weight: 500; }
+
+* + h1, h2, h3, h4, h5, h6 { margin-top: 2rem; }
+
+a { color: var(--link); text-decoration: none; border-bottom: 2px dotted; padding: 0 3px; transition: background ease-out 150ms; }
+
+a:hover { color: var(--link); background: var(--link-hover); border-radius: 3px 3px 0 0; cursor: pointer; border-bottom: solid 1px; padding-bottom: 1px; }
+
+p { line-height: 1.75em; }
+
+p + p { padding-top: 1em; }
+
+ol, li { line-height: 1.75em; }
+
+ol > p + p, li > p + p { padding-top: 0; }
+
+li::marker { color: var(--headings); }
+
+::selection, ::-moz-selection { background: var(--selection); }
+
+em { color: var(--emphasis); font-style: normal; }
+
+dl dt { color: var(--emphasis); font-style: normal; font-weight: bold; display: inline-block; }
+
+dl dd { display: inline-block; }
+
+blockquote { padding: 1em 1em; border-radius: 0 5px 5px 0; background: var(--blockquote); margin: 1em 0; }
+
+blockquote p + p { padding-top: 0.25em; }
+
+cite { display: block; font-style: italic; font-size: 0.75em; line-height: 1.25em; }
+
+ul { margin: 0 0 1rem; }
+
+html { background: #060941; }
+
+body { background: var(--back); background: var(--background); color: var(--text); font-size: 18px; }
+
+main { padding-bottom: 5rem; }
+
+header { padding: 2rem 0; margin: 0 0 1rem; background: rgba(255, 255, 255, 0.05); }
+
+header h1 { font-size: 2.5rem; margin: 0; text-transform: uppercase; color: var(--text); }
+
+@media screen and (max-width: 390px) { header h1 { text-align: center; } }
+
+header nav.main { max-width: 50rem; margin: auto; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; }
+
+@media screen and (max-width: 450px) { header nav.main { flex-direction: column; } }
+
+header nav.main a { color: inherit; text-decoration: none; border: none; transition: border-bottom ease-out 150ms; }
+
+header nav.main a:hover { background: none; border-bottom: 4px solid var(--headings); }
+
+header nav.main span.theme-toggle { border-radius: 1.25em; width: 2.5em; height: 1.5em; position: relative; cursor: pointer; }
+
+header nav.main span.theme-toggle::before { position: absolute; display: block; transition: background 450ms ease-out, left 200ms ease-out, right 200ms ease-out; }
+
+.content { max-width: 50rem; margin: auto; padding: 0 2rem; }
+
+.footnotes { border-top: 1px solid var(--link-hover); padding-top: 1rem; margin-top: 1rem; font-size: 14px; font-style: italic; }
+
+.footnotes ol { margin: 0; }
+
+.social { font-size: 1.5rem; }
+
+.social [class^="icon-"], .social [class*=" icon-"] { display: inline-block; width: 100%; }
+
+.social a { display: inline-flex; justify-content: center; align-items: center; height: 2em; width: 2em; margin: auto; vertical-align: center; text-decoration: none; border: 2px solid; border-radius: 5px; padding: 0.25rem; color: var(--text); }
+
+.social a, .social a svg { transition: color fill stroke ease-in-out 150ms; }
+
+.social a:hover, .social a:hover > svg { background: none; color: var(--headings); stroke: var(--headings); fill: var(--headings); }
+
+.social a:not(:last-child) { margin-right: 0.5em; }
+
+.social a svg { width: 1em; height: 1em; stroke: var(--text); fill: var(--text); }
+
+table.definitions { margin-top: 1rem; }
+
+table.definitions td { vertical-align: top; padding-bottom: 0.5rem; }
+
+table.definitions td:first-child { padding-right: 1em; text-align: right; }
+
+body.dark nav .theme-toggle { background: #091740; }
+
+body.dark nav .theme-toggle::before { content: '🌒'; left: 0.25em; }
+
+body.dark nav .theme-toggle:hover { background: #6385C1; }
+
+body.dark nav .theme-toggle:hover::before { content: '🌓'; left: 0.75em; }
+
+body.light nav .theme-toggle { background: #b2dafd; }
+
+body.light nav .theme-toggle::before { content: '🌔'; right: 0.25em; }
+
+body.light nav .theme-toggle:hover { background: #6385C1; }
+
+body.light nav .theme-toggle:hover::before { content: '🌓'; right: 0.75em; }
+
+.posts a.post { display: block; padding: 0.5em; border-radius: 5px; border: 1px solid var(--link-hover); transition: background ease-out 150ms; }
+
+.posts a.post + a.post { margin-top: 1rem; }
+
+.posts a.post h3.post-title { margin-top: 0; }
+
+.posts a.post .summary { color: var(--text); }
+
+.posts li + li { margin: 0.25rem 0; }
+
+/*# sourceMappingURL=main.css.map */

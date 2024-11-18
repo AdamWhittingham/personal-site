@@ -1,8 +1,12 @@
-@import "reset";
-@import "colors";
-@import "typography";
-@import "layout";
-@import "social";
-@import "tables";
-@import "theme_switch";
-@import "layout_default";
+@use "reset";
+@use "colors";
+@use "typography";
+@use "layout";
+@use "social";
+@use "tables";
+@use "theme_switch";
+@use "layout_default";
+
+background {
+  background-color: yellow;
+}

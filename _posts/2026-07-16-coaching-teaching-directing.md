@@ -1,11 +1,11 @@
 ---
 title: Coaching, Teaching & Directing
-description: "There's a right time and tool for each situation."
-home_summary: "There's a right time and tool for each situation."
+description: "There's a right time for each."
+home_summary: "There's a right time for each."
 ---
 
 # Coaching, Teaching, and Directing
-## Choosing the right tool for growing your team
+## There's a right time for each
 
 Helping someone on your team improve is not one activity, it is three. Coaching, teaching, and directing are distinct modes of working with a person, and each is the right choice in different circumstances. A lot of leadership advice treats one of them (usually coaching) as the enlightened option and the others as failures of patience. In practice, a leader who can only coach is as limited as one who can only give orders. The skill is in knowing which mode a situation calls for, and moving between them deliberately.
 

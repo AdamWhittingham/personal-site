@@ -1,11 +1,11 @@
 ---
-title: Slack Conventions for Engineering Teams That Actually Scale
+title: Slack Conventions for that Actually Scale
 description: "How we grew without being killed by communication overhead"
 home_summary: "How we grew without being killed by communication overhead"
 ---
 
-# Slack Conventions for Engineering Teams That Actually Scale
-## How we grew without being killed by communication overhead
+# Slack Conventions for that Actually Scale
+## How to grow your company without being killed by communication overhead
 
 As engineering teams grow, communication overhead grows faster. Every extra person adds more conversations, more channels, and more opportunities for information to get lost or duplicated. The teams that run smoothly are not the ones that communicate the most, they are the ones that communicate deliberately. Over the years I have settled on a set of conventions for how I use Slack, and they have made a noticeable difference to how quickly decisions get made and how little time we spend repeating ourselves.
 
@@ -67,4 +67,4 @@ A useful habit is to end any significant thread by asking whether anything in it
 
 ## The payoff
 
-None of these conventions is complicated, and each one on its own saves a few seconds or a single duplicated message. Together, they change the character of how a team communicates: information reaches the people who need it without being repeated, decisions are easy to find, interruptions are rare, and knowledge that matters ends up somewhere durable. That is what smooth-running looks like day to day, and it is built out of small, consistent habits rather than grand process.
+None of these conventions are complicated, and each one on its own saves a few seconds or a single duplicated message. Together, they change the character of how a team communicates: information reaches the people who need it without being repeated, decisions are easy to find, interruptions are rare, and knowledge that matters ends up somewhere durable. That is what smooth-running looks like day to day, and it is built out of small, consistent habits rather than grand process.

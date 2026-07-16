@@ -1,13 +1,13 @@
 ---
-title: Coaching, Teaching & Managing
+title: Coaching, Teaching & Directing
 description: "There's a right time and tool for each situation."
 home_summary: "There's a right time and tool for each situation."
 ---
 
-# Coaching, teaching, and managing
+# Coaching, Teaching, and Directing
 ## Choosing the right tool for growing your team
 
-Helping someone on your team improve is not one activity, it is three. Coaching, teaching, and managing are distinct modes of working with a person, and each is the right choice in different circumstances. A lot of leadership advice treats one of them (usually coaching) as the enlightened option and the others as failures of patience. In practice, a leader who can only coach is as limited as one who can only give orders. The skill is in knowing which mode a situation calls for, and moving between them deliberately.
+Helping someone on your team improve is not one activity, it is three. Coaching, teaching, and directing are distinct modes of working with a person, and each is the right choice in different circumstances. A lot of leadership advice treats one of them (usually coaching) as the enlightened option and the others as failures of patience. In practice, a leader who can only coach is as limited as one who can only give orders. The skill is in knowing which mode a situation calls for, and moving between them deliberately.
 
 ## The three modes
 
@@ -15,20 +15,20 @@ Helping someone on your team improve is not one activity, it is three. Coaching,
 
 **Teaching** is what I fall back to when someone is not yet equipped to be coached on a topic. When the subject is too unfamiliar for introspection to get them anywhere, I instead ask leading questions to explore the concept with them, and/or demonstrate how I would solve the issue. Teaching is still interactive (they are working through it, not watching me or being lectured), but I am supplying the scaffolding they do not yet have. The aim is to build enough of a framework that next time, coaching becomes possible.
 
-**Managing** is where I directly tell someone what to do. I will provide context where I can, because instructions land better when people understand the reasoning, but the defining feature is that the decision is mine and the direction is explicit. It is the least developmental of the three, and it is sometimes exactly what the moment requires.
+**Directing** is where I directly tell someone what to do. I will provide context where I can, because instructions land better when people understand the reasoning, but the defining feature is that the decision is mine and the direction is explicit. It is the least developmental of the three, and it is sometimes exactly what the moment requires.
 
 ## Deciding which to use
 
 Three attributes drive the choice for me: **jeopardy**, **urgency**, and **capability**.
 
 **Jeopardy** asks: "what is the cost of them getting this wrong?"
-If the mistake would harm the company (a security incident, losing a major customer, a data loss), I **must** to err towards managing and tell them how to avoid it. If the downside is a minor annoyance, like perhaps they explore a dead-end for a couple of hours, I can let them explore freely and treat whatever happens as tuition. Most situations sit somewhere between, and the honest question is whether I am comfortable underwriting the worst realistic outcome of them finding their own way.
+If the mistake would harm the company (a security incident, losing a major customer, a data loss), I **must** to err towards directing and tell them how to avoid it. If the downside is a minor annoyance, like perhaps they explore a dead-end for a couple of hours, I can let them explore freely and treat whatever happens as tuition. Most situations sit somewhere between, and the honest question is whether I am comfortable underwriting the worst realistic outcome of them finding their own way.
 
 **Urgency** asks: "how much time do we have?"
-If something is needed immediately, I have no choice but to manage; there is no room for a learning journey when the answer is due now. If there is a little time, I will teach. Ideally there is enough time for me to give them the framework and then let them resolve it themselves, which is where teaching starts to shade into coaching. This usually takes the shape of me explaining a cusotmer problem or even sharing the customer feedback and asking the engineer to spend a few hours making a plan to solve it, which we review together.
+If something is needed immediately, I have no choice but to manage; there is no room for a learning journey when the answer is due now. If there is a little time, I will teach. Ideally there is enough time for me to give them the framework and then let them resolve it themselves, which is where teaching starts to shade into coaching. This usually takes the shape of me explaining a customer problem or even sharing the customer feedback and asking the engineer to spend a few hours making a plan to solve it, which we review together.
 
 **Capability** asks: "how close is this to something they have done before?"
-If the task is similar to their past experience, coaching is the ideal option, because they have the raw material to reason with. If it is pretty dissimilar to previous experiences, I will need to teach or manage, and the choice between those two depends on the size of the gap between their abilities and the demands of the task. A modest gap is a teaching opportunity; a chasm means managing them through it this time and building the capability afterwards.
+If the task is similar to their past experience, coaching is the ideal option, because they have the raw material to reason with. If it is pretty dissimilar to previous experiences, I will need to teach or manage, and the choice between those two depends on the size of the gap between their abilities and the demands of the task. A modest gap is a teaching opportunity; a chasm means directing them through it this time and building the capability afterwards.
 
 The three attributes interact, and the most restrictive one wins. A capable engineer facing a novel problem with high jeopardy and no time gets managed, however experienced they are. The same engineer facing the same problem with low stakes and a loose deadline gets coached, however messy their first attempt is likely to be.
 

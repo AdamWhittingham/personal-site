@@ -5,6 +5,10 @@
   --heading_font: 'Barlow', sans-serif;
 }
 
+html{
+  font-size: 24px;
+}
+
 body {
   font-family: var(--font);
   font-weight: 200;
@@ -18,25 +22,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   line-height: 1.2em;
   margin-bottom: 0.75em;
+  color: var(--link);
   & + h2 {
     font-style: italic;
     font-family: var(--font);
     margin-top: -0.75em;
-    color: var(--link);
+    margin-bottom: 0.75em;
   }
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 0.25em;
 }
 
 h3, h4, h5, h6 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -59,17 +64,11 @@ a {
 }
 
 p{
-  font-size: 1.5rem;
   line-height: 1.5em;
   & + p { padding-top: 1.5em; }
 }
 
-strong {
-  font-weight: 700;
-}
-
 ol, li{
-  font-size: 1.5rem;
   line-height: 1.75em;
   & > p + p { padding-top: 0; }
 }
@@ -86,6 +85,11 @@ em {
   font-style: normal;
 }
 
+strong {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
 dl{
   dt {
     color: var(--emphasis);
@@ -97,6 +101,13 @@ dl{
   dd {
     display: inline-block;
   }
+}
+
+code {
+  font-size: 0.75rem;
+  background: var(--blockquote);
+  padding: 0.25em 0.25em;
+  border-radius: 3px;
 }
 
 blockquote {

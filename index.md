@@ -7,7 +7,7 @@ canonical_url: https://adam.whittingham.dev
 
 Hi, I'm Ad and I enjoy making things.
 
-I'm <em>VP of Engineering</em> at <a href="https://cronofy.com">Cronofy</a>, building the best tools and APIs to <a href="https://cronofy.com">schedule everything for everyone</a>.
+I'm VP of Engineering at <a href="https://cronofy.com">Cronofy</a>, where we build the temporal infrastructure to make scheduling easy.
 
 # Posts
 
@@ -20,7 +20,7 @@ I'm <em>VP of Engineering</em> at <a href="https://cronofy.com">Cronofy</a>, bui
   {% endfor %}
 </section>
 
-# Projects
+# Open Source Projects
 
 [Vim config](https://github.com/AdamWhittingham/vim-config)
 |
@@ -32,7 +32,7 @@ I'm <em>VP of Engineering</em> at <a href="https://cronofy.com">Cronofy</a>, bui
 |
 [Keyboard firmware](https://github.com/AdamWhittingham/keyboards)
 
-# Social
+# Rarely used social links
 
 <div class="social">
   <a rel="me" href="https://ruby.social/@ad" aria-label="View Adam's Mastodon profile">

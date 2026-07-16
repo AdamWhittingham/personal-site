@@ -26,7 +26,8 @@ header{
   h1 {
     margin: 0;
     text-transform: uppercase;
-    color: var(--text);
+    .name-first { color: var(--emphasis); }
+    .name-last { font-style: var(--font); }
 
     @media screen and (max-width: 390px) {
       text-align: center;
@@ -65,9 +66,9 @@ header{
         position: absolute;
         display: block;
         transition:
-          background 450ms ease-out,
-          left 200ms ease-out,
-          right 200ms ease-out;
+          background 300ms ease-out,
+          left 150ms ease-out,
+          right 150ms ease-out;
       }
     }
   }

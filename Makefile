@@ -5,3 +5,8 @@ dev:
 .PHONY: lint-drafts
 lint-drafts:
 	vale --config="${HOME}/.adshell/vale/vale.ini" _drafts/*
+
+.PHONY: init
+init:
+	asdf install
+	bundle

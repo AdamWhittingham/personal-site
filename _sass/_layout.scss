@@ -26,8 +26,8 @@ header{
   h1 {
     margin: 0;
     text-transform: uppercase;
-    .name-first { color: var(--emphasis); }
-    .name-last { font-style: var(--font); }
+    .name-first { color: var(--text); }
+    .name-last {color: var(--emphasis);}
 
     @media screen and (max-width: 390px) {
       text-align: center;

@@ -3,18 +3,15 @@
     display: block;
     padding: 0.5em 1em;
     border-radius: 5px;
-    border: 1px solid var(--link-hover);
+    border: 1px solid rgba(128, 128, 128, 0.25);
     transition: background ease-out 150ms;
+
     & + a.post {
       margin-top: 1rem;
     }
 
-    h3.post-title{
-      margin-top: 0;
-    }
-    .summary{
-      color: var(--text);
-    }
+    h3.post-title{ margin-top: 0; }
+    .summary{ color: var(--text); }
   }
 
   li + li {

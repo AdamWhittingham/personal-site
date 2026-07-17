@@ -48,12 +48,20 @@ We use an emoji at the start of a message to denote it has extra important or to
 
 For example, conversations meander, and the decision buried in message 12 of a thread is easy to miss. When a decision is made, we mark it with the 🦺 emoji to show this needs to be highly visible.
 
-Urgent decisions blocking work get the ⁉️ emoji, plans that need to be challenged get the 🚜 emoji, based on the idea of "Farming for Dissent" from "No Rules Rules".
-We also use certain emoji reactions to simplify common requests - such as 🔮 to mean "this message doesn't have enough context for me to help and I don't have a crystal ball - please edit it with more info". 👀 and ✅ or ❓ are use to say "I'm looking at this PR/issue" and "it's resolved" or "I have left questions and comments" respectively.
+Some other examples are:
+- ⁉️ for urgent decisions blocking work 
+- 🚜 for plans that need to be challenged, based on the idea of "Farming for Dissent" from "No Rules Rules".
+- 🚨 for issues that need urgent attention, like a live issue channel being created
 
-It is a tiny convention with an outsized payoff: anyone can scan a channel or thread and find the decisions in seconds, without reading everything around them.
+We carry these patterns into reactions to messages too, simplifying common interactions.
+- 🔮 to mean "this message doesn't have enough context for me to help" - "I don't have a crystal ball - please edit it with more info".
+- 👀 to say "I'm looking into this", for alerts and pull questions
+- ✅ for "it's done/resolved"
+- 📝 to suggest that a pull request has been reviewed with comments left
 
-Also Huge amounts of 'filler' conversation is replaced by an emoji - "Sorry but I don't question follow what you mean, there's not enough context in here for me to know what you're looking at, can you add some more please?" becomes a simple polite 🔮 reaction.
+These are tiny conventions with an outsized payoff: anyone can scan a channel or thread and find the decisions and many actions taken in seconds, without reading everything.
+
+Huge amounts of 'filler' conversation is replaced by an emoji - "Sorry but I don't question follow what you mean, there's not enough context in here for me to know what you're looking at, can you explain more please?" becomes a simple polite 🔮 reaction.
 
 ## Mention people sparingly
 

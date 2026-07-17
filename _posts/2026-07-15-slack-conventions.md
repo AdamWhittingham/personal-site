@@ -44,7 +44,7 @@ It’s much better to put the message in the channel that most closely represent
 
 ## Use emoji to convey context
 
-We use an emoji at the start of a message to denote it has extra important or to add context.
+We use an emoji at the start of a message to denote it has extra importance or to add context.
 
 For example, conversations meander, and the decision buried in message 12 of a thread is easy to miss. When a decision is made, we mark it with the 🦺 emoji to show this needs to be highly visible.
 

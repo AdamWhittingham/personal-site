@@ -33,7 +33,7 @@ header {
     margin: 0;
     text-transform: uppercase;
     .name-first { color: var(--text); }
-    .name-last { color: var(--emphasis); }
+    .name-last { color: var(--headings); }
 
     @media screen and (max-width: 390px) {
       text-align: center;

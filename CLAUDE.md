@@ -15,7 +15,7 @@ make build         # one-off build into _site/ — what CI runs
 make lint-drafts   # vale over _drafts/ (prose linting)
 ```
 
-Ruby is pinned to 3.4.10 in `.tool-versions`, matching `ruby-version: '3.4'` in the deploy workflow — keep the two in step. Jekyll 4.3 needs `base64`, `csv` and `logger` declared in the `Gemfile` because Ruby 3.4 unbundled them from the stdlib; dropping them breaks every command with `cannot load such file -- csv`.
+Ruby is pinned to 4.0.6 in `.tool-versions`, matching `ruby-version: '4.0'` in the deploy workflow — keep the two in step. Jekyll 4.3 needs `base64`, `csv` and `logger` declared in the `Gemfile` because Ruby 3.4 unbundled them from the stdlib; dropping them breaks every command with `cannot load such file -- csv`.
 
 Don't run `make build` while `make dev` is running — both write `_site/`, and the build (no `--drafts`) deletes the draft pages the server is serving until the next regeneration.
 

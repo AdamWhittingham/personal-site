@@ -1,79 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+/* Fonts are loaded in _layouts/default.html so they can preconnect. */
 
 :root {
-  --font: 'Cormorant Garamond', serif;
-  --heading_font: 'Barlow', sans-serif;
+  --font: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --heading_font: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --mono_font: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
 }
 
-html{
-  font-size: 24px;
+html {
+  font-size: 19px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 17px;
+  }
 }
 
 body {
   font-family: var(--font);
-  font-weight: 200;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--headings);
   font-family: var(--heading_font);
-  font-weight: 700;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
   margin: 0;
 }
 
+* + :is(h1, h2, h3, h4, h5, h6) {
+  margin-top: 2.25rem;
+}
+
 h1 {
-  font-size: 1.75rem;
-  line-height: 1.2em;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
   margin-bottom: 0.75em;
   color: var(--link);
+
+  /* Posts follow their title with a subtitle h2. */
   & + h2 {
-    font-style: italic;
     font-family: var(--font);
-    margin-top: -0.75em;
-    margin-bottom: 0.75em;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 350;
+    letter-spacing: 0;
+    color: var(--muted);
+    margin-top: -1.1em;
+    margin-bottom: 1.25em;
   }
 }
 
 h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 0.25em;
+  font-size: 1.45rem;
+  margin-bottom: 0.3em;
 }
 
 h3, h4, h5, h6 {
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.15rem;
 }
 
-* + h1,h2,h3,h4,h5,h6 { margin-top: 2rem; }
+p {
+  text-wrap: pretty;
+  & + p { padding-top: 1.1em; }
+}
 
 a {
   color: var(--link);
-  text-decoration: none;
-  border-bottom: 2px dotted;
-  padding: 0 3px;
-  transition: background ease-out 150ms;
-  &:hover{
-    color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: color-mix(in srgb, var(--link) 45%, transparent);
+  text-underline-offset: 0.2em;
+  border-radius: 3px;
+  transition: background 150ms ease-out, text-decoration-color 150ms ease-out;
+
+  &:hover {
     background: var(--link-hover);
-    border-radius: 3px 3px 0 0;
+    text-decoration-color: var(--link);
+    box-shadow: 0 0 0 0.2em var(--link-hover);
     cursor: pointer;
-    border-bottom: solid 1px;
-    padding-bottom: 1px;
   }
 }
 
-p{
-  line-height: 1.5em;
-  & + p { padding-top: 1.5em; }
+:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
-ol, li{
-  line-height: 1.75em;
+ul, ol {
+  margin: 0 0 1rem;
+  padding-left: 1.4em;
+}
+
+li {
+  line-height: 1.65;
+  & + li { margin-top: 0.35em; }
   & > p + p { padding-top: 0; }
 }
 
-li::marker { color: var(--headings)}
+li::marker { color: var(--headings); }
 
 ::selection,
 ::-moz-selection {
@@ -86,15 +117,14 @@ em {
 }
 
 strong {
-  font-weight: 700;
-  font-size: 1.1em;
+  font-weight: 600;
 }
 
-dl{
+dl {
   dt {
     color: var(--emphasis);
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     display: inline-block;
   }
 
@@ -104,30 +134,46 @@ dl{
 }
 
 code {
-  font-size: 0.75rem;
-  background: var(--blockquote);
-  padding: 0.25em 0.25em;
-  border-radius: 3px;
+  font-family: var(--mono_font);
+  font-size: 0.8em;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  padding: 0.1em 0.35em;
+  border-radius: 5px;
+  white-space: nowrap;
 }
 
-blockquote {
-  padding: 1em 1em;
-  border-radius: 0 5px 5px 0;
-  background: var(--blockquote);
-  margin: 1em 0;
+pre {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1em 1.1em;
+  overflow-x: auto;
 
-  p + p {
-    padding-top: 0.25em;
+  code {
+    background: none;
+    border: none;
+    padding: 0;
+    white-space: pre;
   }
 }
 
-cite{
-  display: block;
-  font-style: italic;
-  font-size: 0.75em;
-  line-height: 1.25em;
+blockquote {
+  position: relative;
+  background: var(--blockquote);
+  border-left: 3px solid var(--border-strong);
+  border-radius: 0 10px 10px 0;
+  padding: 0.9em 1.1em;
+  margin: 1.5em 0;
+
+  p + p { padding-top: 0.4em; }
 }
 
-ul {
-  margin: 0 0 1rem;
+cite {
+  display: block;
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.75em;
+  line-height: 1.4;
+  margin-top: 0.4em;
 }

@@ -1,33 +1,39 @@
 html {
-  background: #060941;
+  background-color: var(--base);
 }
 
 body {
-  background: var(--back);
-  background: var(--background);
+  background: var(--base);
+  background-image: var(--background);
+  background-attachment: fixed;
   color: var(--text);
 }
 
 @mixin content {
-  max-width: 40rem;
+  width: 100%;
+  max-width: 38rem;
   margin: auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 main {
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
 }
 
-header{
+.content {
+  @include content;
+}
+
+header {
   padding: 1.25rem 0;
   margin: 0 0 1rem;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
 
   h1 {
     margin: 0;
     text-transform: uppercase;
     .name-first { color: var(--text); }
-    .name-last {color: var(--emphasis);}
+    .name-last { color: var(--emphasis); }
 
     @media screen and (max-width: 390px) {
       text-align: center;
@@ -42,6 +48,7 @@ header{
 
     @media screen and (max-width: 450px) {
       flex-direction: column;
+      gap: 0.75rem;
     }
 
     a {
@@ -51,38 +58,19 @@ header{
       transition: border-bottom ease-out 150ms;
       &:hover {
         background: none;
+        box-shadow: none;
         border-bottom: 4px solid var(--headings);
-      }
-    }
-
-    span.theme-toggle {
-      border-radius: 1.25em;
-      width: 2.5em;
-      height: 1.5em;
-      position: relative;
-      cursor: pointer;
-
-      &::before {
-        position: absolute;
-        display: block;
-        transition:
-          background 300ms ease-out,
-          left 150ms ease-out,
-          right 150ms ease-out;
       }
     }
   }
 }
 
-.content{
-  @include content;
-}
-
 .footnotes {
-  border-top: 1px solid var(--link-hover);
+  border-top: 1px solid var(--border);
   padding-top: 1rem;
-  margin-top: 1rem;
-  font-size: 14px;
+  margin-top: 3rem;
+  color: var(--muted);
+  font-size: 0.8rem;
   font-style: italic;
-  ol { margin: 0 }
+  ol { margin: 0; }
 }

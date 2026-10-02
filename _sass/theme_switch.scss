@@ -1,34 +1,63 @@
-body.dark{
-  nav .theme-toggle{
-    background: #091740;
-    &::before {
-      content: '🌒';
-      left: 0.25em;
-    }
+/*
+ * Moon phase toggle: the moon sits left in dark mode and right in light mode,
+ * waxing/waning to the half moon as it slides half way on hover.
+ *
+ * The track uses the same translucent surface + border as the post cards.
+ */
+.theme-toggle {
+  width: 3em;
+  height: 1.75em;
+  padding: 0;
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition:
+    background 250ms ease-out,
+    border-color 250ms ease-out;
 
-    &:hover{
-      background: #6385C1;
-      &::before {
-        content: '🌓';
-        left: 0.75em;
-      }
-    }
+  &:hover {
+    background: var(--surface-raised);
+    border-color: var(--border-strong);
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    /* Nudged down: emoji ink sits high in its line box */
+    transform: translateY(calc(-50% + 0.1em));
+    display: block;
+    font-size: 0.9em;
+    line-height: 1;
+    transition:
+      left 150ms ease-out,
+      right 150ms ease-out;
   }
 }
 
-body.light{
-  nav .theme-toggle{
-    background: #b2dafd;
-    &::before {
-      content: '🌔';
-      right: 0.25em;
-    }
-    &:hover{
-      background: #6385C1;
-      &::before {
-        content: '🌓';
-        right: 0.75em;
-      }
-    }
+:root.dark .theme-toggle {
+  &::before {
+    content: '🌒';
+    left: 0.35em;
+  }
+
+  &:hover::before {
+    content: '🌓';
+    left: calc(50% - 0.5em);
+  }
+}
+
+:root.light .theme-toggle {
+  &::before {
+    content: '🌔';
+    right: 0.35em;
+  }
+
+  &:hover::before {
+    content: '🌓';
+    right: calc(50% - 0.5em);
   }
 }

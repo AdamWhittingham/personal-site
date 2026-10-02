@@ -5,11 +5,11 @@ description: "Projects and blog posts by Adam Whittingham, a Software Engineer i
 canonical_url: https://adam.whittingham.dev
 ---
 
-Hi, I'm Ad and I enjoy making things.
+# Hi, I'm Ad and I enjoy making things.
 
 I'm VP of Engineering at <a href="https://cronofy.com">Cronofy</a>, where we build the temporal infrastructure to make scheduling easy.
 
-# Posts
+## Posts
 
 <section class="posts">
   {% for post in site.posts %}
@@ -20,19 +20,17 @@ I'm VP of Engineering at <a href="https://cronofy.com">Cronofy</a>, where we bui
   {% endfor %}
 </section>
 
-# Open Source Projects
+## Open Source Projects
 
-[Vim config](https://github.com/AdamWhittingham/vim-config)
-|
-[Vim colorscheme](https://github.com/AdamWhittingham/vim-adcode-theme)
-|
-[Shell setup](https://github.com/AdamWhittingham/adshell)
-|
-[Tmux config](https://github.com/AdamWhittingham/tmux-config)
-|
-[Keyboard firmware](https://github.com/AdamWhittingham/keyboards)
+<div class="links-row">
+  <a href="https://github.com/AdamWhittingham/vim-config">Vim config</a>
+  <a href="https://github.com/AdamWhittingham/vim-adcode-theme">Vim colorscheme</a>
+  <a href="https://github.com/AdamWhittingham/adshell">Shell setup</a>
+  <a href="https://github.com/AdamWhittingham/tmux-config">Tmux config</a>
+  <a href="https://github.com/AdamWhittingham/keyboards">Keyboard firmware</a>
+</div>
 
-# Rarely used social links
+## Rarely used social links
 
 <div class="social">
   <a rel="me" href="https://ruby.social/@ad" aria-label="View Adam's Mastodon profile">

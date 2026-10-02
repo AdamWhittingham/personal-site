@@ -1,43 +1,38 @@
 .social {
-  [class^="icon-"], [class*=" icon-"] {
-    display: inline-block;
-    width: 100%;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 
   a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    height: 2em;
-    width: 2em;
-    margin: auto;
-    vertical-align: center;
-    text-decoration: none;
-    border: 2px solid;
-    border-radius: 5px;
-    padding: 0.25rem;
+    height: 2.25em;
+    width: 2.25em;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface);
     color: var(--text);
-
-    &, & svg {
-      transition: color fill stroke ease-in-out 150ms;
-    }
-
-    &:hover, &:hover > svg {
-      background: none;
-      color: var(--headings);
-      stroke: var(--headings);
-      fill: var(--headings);
-    }
-
-    &:not(:last-child) {
-      margin-right: 0.5em;
-    }
+    text-decoration: none;
+    transition:
+      border-color 180ms ease-out,
+      background 180ms ease-out,
+      transform 180ms ease-out;
 
     svg {
       width: 1em;
       height: 1em;
-      stroke: var(--text);
-      fill: var(--text);
+      fill: currentColor;
+      stroke: none;
+      transition: fill 180ms ease-out;
+    }
+
+    &:hover {
+      background: var(--surface-raised);
+      border-color: var(--headings);
+      color: var(--headings);
+      box-shadow: none;
+      transform: translateY(-2px);
     }
   }
 }

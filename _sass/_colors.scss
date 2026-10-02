@@ -1,34 +1,57 @@
+/*
+ * Theme tokens.
+ *
+ * The theme class lives on <html> (set by assets/js/main.js before paint), so
+ * every token must be declared in BOTH the :root and .light block below or one
+ * theme will inherit the other's value.
+ */
+
 :root {
-  --back-dark: #060941;
-  --back-light: #C8C2C0;
+  color-scheme: dark;
+
+  --base: #050a1f;
+  --background:
+    radial-gradient(90rem 45rem at 15% -15%, rgba(39, 72, 158, 0.55) 0%, transparent 60%),
+    radial-gradient(60rem 35rem at 100% 0%, rgba(20, 94, 122, 0.35) 0%, transparent 55%),
+    linear-gradient(172deg, #091236 0%, #050a1f 55%, #03061a 100%);
+
+  --text: #e7ecfa;
+  --muted: #9dabd0;
+  --headings: #8ee3f0;
+  --link: #c6ed7e;
+  --emphasis: #7aa2ff;
+
+  --surface: rgba(255, 255, 255, 0.045);
+  --surface-raised: rgba(255, 255, 255, 0.075);
+  --border: rgba(173, 197, 255, 0.14);
+  --border-strong: rgba(173, 197, 255, 0.3);
+  --blockquote: rgba(255, 255, 255, 0.05);
+  --selection: rgba(46, 101, 219, 0.45);
+  --link-hover: rgba(198, 237, 126, 0.14);
+  --shadow: 0 1rem 2.5rem rgba(2, 5, 20, 0.55);
 }
 
-body {
-  --background: linear-gradient(135deg, #102850 0%, #060941 100%);
-  --back: var(--back-dark);
-  --text: #FFFFFF;
-  --headings: #A9EEF4;
-  --selection: #1057BC;
-  --link: #C0E873;
-  --blockquote: rgba(255, 255, 255, 0.1);
+:root.light {
+  color-scheme: light;
 
-  --emphasis: #0066FF;
-  --link-hover: rgba(255, 255, 255, 0.1);
+  --base: #f1f4fd;
+  --background:
+    radial-gradient(90rem 45rem at 10% -15%, rgba(190, 213, 255, 0.75) 0%, transparent 60%),
+    radial-gradient(60rem 35rem at 100% 0%, rgba(226, 205, 255, 0.6) 0%, transparent 55%),
+    linear-gradient(165deg, #f5f8ff 0%, #f7f2ff 100%);
+
+  --text: #141b38;
+  --muted: #4f5c82;
+  --headings: #a8005c;
+  --link: #2740c8;
+  --emphasis: #1e52e8;
+
+  --surface: rgba(255, 255, 255, 0.6);
+  --surface-raised: rgba(255, 255, 255, 0.85);
+  --border: rgba(20, 40, 100, 0.12);
+  --border-strong: rgba(20, 40, 100, 0.28);
+  --blockquote: rgba(255, 255, 255, 0.7);
+  --selection: rgba(162, 203, 254, 0.7);
+  --link-hover: rgba(39, 64, 200, 0.1);
+  --shadow: 0 1rem 2.5rem rgba(30, 50, 110, 0.12);
 }
-
-body.light {
-  --background: linear-gradient(62deg, #e2f0ff 0%, #f3e5ff 100%);
-  --back: var(--back-light);
-  --text: #00103A;
-  --link: #060047;
-  --selection: #A2CBFE;
-  --headings: #B3005E;
-  --blockquote: rgba(255, 255, 255, 0.25);
-
-  --link-hover: rgba(255, 255, 255, 0.25);
-}
-
-html {
-  background: #2050AF;
-}
-

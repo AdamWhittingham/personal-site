@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}" class="dark">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lora&family=Syne&display=swap" as="style">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Syne&display=swap">
-    <link rel="stylesheet" href="/assets/css/styles.css">
 
-    <script type="text/javascript" src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <meta name="theme-color" content="#050a1f" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f1f4fd" media="(prefers-color-scheme: light)">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Space+Grotesk:wght@500;600;700&display=swap">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+
+    <!-- Sets the theme class on <html> before first paint to avoid a flash -->
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     {% seo %}
   </head>
 
   <body>
     <header>
-      <nav class="main">
+      <nav class="main" aria-label="Main">
         <h1>
-          <a href="/">
-          <span class="name-first">Adam</span><span class="name-last">Whittingham<span></a>
+          <a href="{{ '/' | relative_url }}">
+          <span class="name-first">Adam</span><span class="name-last">Whittingham</span></a>
         </h1>
-        <span class="theme-toggle"></span>
+        <button class="theme-toggle" type="button" aria-label="Switch between light and dark theme" aria-pressed="false"></button>
       </nav>
     </header>
     <main>
